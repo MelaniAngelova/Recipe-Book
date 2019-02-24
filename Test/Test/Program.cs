@@ -12,6 +12,7 @@ namespace Test
         {
             
             Console.WriteLine("Хелоу");
+            Console.WriteLine("Zdravei");
         }
     }
 }
