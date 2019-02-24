@@ -13,7 +13,7 @@ namespace Test
             int a = 4;
             Console.WriteLine("Хелоу");
             Console.WriteLine("Zdravei");
-            Console.WriteLine("Confct");
+            Console.WriteLine("Conflict");
         }
     }
 }
