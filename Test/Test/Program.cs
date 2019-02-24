@@ -10,7 +10,8 @@ namespace Test
     {
         static void Main(string[] args)
         {
-            int a = 5;
+            int a = 42;
+            Console.WriteLine(a);
         }
     }
 }
