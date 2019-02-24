@@ -13,6 +13,7 @@ namespace Test
             
             Console.WriteLine("Хелоу");
             Console.WriteLine("Zdravei");
+            Console.WriteLine("Conflict");
         }
     }
 }
