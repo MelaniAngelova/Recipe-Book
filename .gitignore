@@ -8,3 +8,6 @@
 /DemoBook/.vs/DemoBook/v15/Server/sqlite3/storage.ide
 /DemoBook/.vs/DemoBook/v15/Server/sqlite3/storage.ide-wal
 /DemoBook/.vs/DemoBook/v15/.suo
+/DemoBook/DemoBook/obj/Release/DemoBook.csprojAssemblyReference.cache
+/DemoBook/DemoBook/obj/Release/DemoBook.csproj.CoreCompileInputs.cache
+/.vs/config/applicationhost.config

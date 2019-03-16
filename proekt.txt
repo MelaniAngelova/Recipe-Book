@@ -1,0 +1,10 @@
+PM> Install-Package Microsoft.EntityFrameworkCore.Tools
+
+
+
+
+PM> Install-Package MySql.Data.EntityFrameworkCore
+
+
+
+
