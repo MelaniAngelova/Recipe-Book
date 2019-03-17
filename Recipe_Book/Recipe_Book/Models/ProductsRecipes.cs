@@ -10,7 +10,7 @@ namespace Recipe_Book.Models
         public int? RecipeId { get; set; }
         public int? Quantity { get; set; }
 
-        public virtual Products Product { get; set; }
-        public virtual Recipes Recipe { get; set; }
+        public virtual Product Product { get; set; }
+        public virtual Recipe Recipe { get; set; }
     }
 }

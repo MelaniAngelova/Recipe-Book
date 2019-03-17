@@ -3,17 +3,17 @@ using System.Collections.Generic;
 
 namespace Recipe_Book.Models
 {
-    public partial class Products
+    public partial class Product
     {
-        public Products()
+        public Product()
         {
             ProductsRecipes = new HashSet<ProductsRecipes>();
         }
 
-        public int Id { get; set; }
+        public int Id { get; }
         public string Name { get; set; }
-        public int? TypeId { get; set; }
-        public double? Price { get; set; }
+        public int? TypeId { get; }
+        public double? Price { get; }
         public string ImgName { get; set; }
 
         public virtual Types Type { get; set; }

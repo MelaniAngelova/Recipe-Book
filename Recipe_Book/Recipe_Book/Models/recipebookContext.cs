@@ -15,10 +15,10 @@ namespace Recipe_Book.Models
         {
         }
 
-        public virtual DbSet<Categories> Categories { get; set; }
-        public virtual DbSet<Products> Products { get; set; }
+        public virtual DbSet<Category> Categories { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<ProductsRecipes> ProductsRecipes { get; set; }
-        public virtual DbSet<Recipes> Recipes { get; set; }
+        public virtual DbSet<Recipe> Recipes { get; set; }
         public virtual DbSet<Types> Types { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -34,7 +34,7 @@ namespace Recipe_Book.Models
         {
             modelBuilder.HasAnnotation("ProductVersion", "2.2.3-servicing-35854");
 
-            modelBuilder.Entity<Categories>(entity =>
+            modelBuilder.Entity<Category>(entity =>
             {
                 entity.ToTable("categories", "recipebook");
 
@@ -49,7 +49,7 @@ namespace Recipe_Book.Models
                     .IsUnicode(false);
             });
 
-            modelBuilder.Entity<Products>(entity =>
+            modelBuilder.Entity<Product>(entity =>
             {
                 entity.ToTable("products", "recipebook");
 
@@ -120,7 +120,7 @@ namespace Recipe_Book.Models
                     .HasConstraintName("fk_products_recipes_recipes");
             });
 
-            modelBuilder.Entity<Recipes>(entity =>
+            modelBuilder.Entity<Recipe>(entity =>
             {
                 entity.ToTable("recipes", "recipebook");
 

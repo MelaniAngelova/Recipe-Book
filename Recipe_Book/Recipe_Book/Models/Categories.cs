@@ -3,16 +3,16 @@ using System.Collections.Generic;
 
 namespace Recipe_Book.Models
 {
-    public partial class Categories
+    public partial class Category
     {
-        public Categories()
+        public Category()
         {
-            Recipes = new HashSet<Recipes>();
+            Recipes = new HashSet<Recipe>();
         }
 
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public virtual ICollection<Recipes> Recipes { get; set; }
+        public virtual ICollection<Recipe> Recipes { get; set; }
     }
 }
