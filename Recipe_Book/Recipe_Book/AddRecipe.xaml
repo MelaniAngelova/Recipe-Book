@@ -22,7 +22,7 @@
 
         <StackPanel Orientation="Horizontal">
 
-            <TextBlock Text="Име" FontSize="20" Width="200" />
+            <TextBlock Text="Име" VerticalAlignment="Center" FontSize="20" Width="200" />
 
             <TextBox Name="RecipeName" FontSize="20" Width="400" />
 
@@ -30,17 +30,25 @@
 
         <StackPanel Orientation="Horizontal" Margin="0 20 0 20">
 
-            <TextBlock Text="Описание" FontSize="20" Width="200" />
+            <TextBlock Text="Описание" VerticalAlignment="Center" FontSize="20" Width="200" />
 
             <TextBox Name="RecipeDescription" FontSize="20" Width="400" />
 
         </StackPanel>
 
-        <StackPanel Orientation="Horizontal">
+        <StackPanel Orientation="Horizontal" Margin="0 20 0 20">
 
-            <TextBlock Text="Категотия" FontSize="20" Width="200" />
+            <TextBlock Text="Категория" VerticalAlignment="Center" FontSize="20" Width="200" />
 
             <TextBox Name="RecipeCategory" FontSize="20" Width="400" />
+
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal">
+
+            <TextBlock Text="Продукти" VerticalAlignment="Center" FontSize="20" Width="200" />
+
+            <TextBox Name="RecipeProducts" FontSize="20" Width="400" />
 
         </StackPanel>
 
@@ -50,13 +58,13 @@
 
         <StackPanel Orientation="Horizontal" Margin="0 20">
 
-            <Button Name="btnInsert" Content="Добави" FontSize="20" Width="150" Padding="20" Margin="0 0 20 0" Click="BtnInsert_Click" />
+            <Button Name="btnAdd" Content="Добави" FontSize="20" Width="150" Padding="20" Margin="0 0 20 0" Click="BtnAdd_Click" />
 
-            <Button Name="btnUpdate" Content="Обнови" FontSize="20" Width="150" Padding="20" Margin="0 0 20 0" Click="BtnUpdate_Click" />
+            <Button Name="btnUpdate" Content="Обнови" FontSize="20" Width="150" Padding="20" Margin="0 0 20 0" />
 
-            <Button Name="btnSave" Content="Запази" FontSize="20" Width="150" Padding="20" Margin="0 0 20 0" Click="BtnSave_Click" />
+            <Button Name="btnSave" Content="Запази" FontSize="20" Width="150" Padding="20" Margin="0 0 20 0" />
 
-            <Button Name="btnDelete" Content="Изтрий" FontSize="20" Width="150" Padding="20" Margin="0 0 20 0" Click="BtnDelete_Click" />
+            <Button Name="btnDelete" Content="Изтрий" FontSize="20" Width="150" Padding="20" Margin="0 0 20 0" />
 
         </StackPanel>
 

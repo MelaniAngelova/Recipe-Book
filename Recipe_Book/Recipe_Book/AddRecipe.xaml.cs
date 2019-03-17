@@ -13,6 +13,9 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+using Recipe_Book.Models;
+using Recipe_Book.Controller;
+
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Recipe_Book
@@ -27,9 +30,10 @@ namespace Recipe_Book
             this.InitializeComponent();
         }
 
-        private void BtnInsert_Click(object sender, RoutedEventArgs e)
+        private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
-
+            CreatePage createPage = new CreatePage();
+            createPage.ManageInput(RecipeName.Text, RecipeDescription.Text, RecipeCategory.Text);
         }
     }
 }
