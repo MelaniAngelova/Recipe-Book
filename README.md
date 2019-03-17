@@ -1,2 +1,2 @@
 # Recipe-Book
-One of a kind super mega amaizing app for cooking.
+One of a kind super mega amazing app for cooking.
