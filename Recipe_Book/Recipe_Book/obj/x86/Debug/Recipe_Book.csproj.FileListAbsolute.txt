@@ -80,3 +80,15 @@ D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\qualifiers.txt.intermediate
 D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\ProjectArchitectures.txt
 D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636758480200000000.json
+D:\Recipe Book\Recipe_Book\Recipe_Book\obj\x86\Debug\Recipe_Book.csprojAssemblyReference.cache
+D:\Recipe Book\Recipe_Book\Recipe_Book\obj\x86\Debug\App.g.i.cs
+D:\Recipe Book\Recipe_Book\Recipe_Book\obj\x86\Debug\App.g.cs
+D:\Recipe Book\Recipe_Book\Recipe_Book\obj\x86\Debug\MainPage.g.i.cs
+D:\Recipe Book\Recipe_Book\Recipe_Book\obj\x86\Debug\MainPage.g.cs
+D:\Recipe Book\Recipe_Book\Recipe_Book\obj\x86\Debug\App.xaml
+D:\Recipe Book\Recipe_Book\Recipe_Book\obj\x86\Debug\MainPage.xaml
+D:\Recipe Book\Recipe_Book\Recipe_Book\obj\x86\Debug\App.xbf
+D:\Recipe Book\Recipe_Book\Recipe_Book\obj\x86\Debug\MainPage.xbf
+D:\Recipe Book\Recipe_Book\Recipe_Book\obj\x86\Debug\XamlSaveStateFile.xml
+D:\Recipe Book\Recipe_Book\Recipe_Book\obj\x86\Debug\Recipe_Book.exe
+D:\Recipe Book\Recipe_Book\Recipe_Book\obj\x86\Debug\Recipe_Book.pdb
