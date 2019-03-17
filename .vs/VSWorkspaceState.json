@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Recipe_Book",
+    "\\Recipe_Book\\Recipe_Book",
     "\\Test"
   ],
-  "SelectedNode": "\\Test\\Test.sln",
+  "SelectedNode": "\\Recipe_Book\\Recipe_Book.sln",
   "PreviewInSolutionExplorer": false
 }
