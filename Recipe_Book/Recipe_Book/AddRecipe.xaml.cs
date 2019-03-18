@@ -12,6 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Storage.Pickers;
+using Windows.Storage;
 
 using Recipe_Book.Models;
 using Recipe_Book.Controller;
@@ -32,8 +34,26 @@ namespace Recipe_Book
 
         private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
+
+            AdditionalCreatePanel.Visibility = Visibility.Visible;
             CreatePage createPage = new CreatePage();
-            createPage.ManageInput(RecipeName.Text, RecipeDescription.Text, RecipeCategory.Text);
+            createPage.ManageInput(RecipeName.Text, RecipeDescription.Text, RecipeCategory.Text, RecipeProducts.Text, ImgName.Text);
+
+        }
+
+        private async void BtnImgLoad_ClickAsync(object sender, RoutedEventArgs e)
+        {
+            var picker = new FileOpenPicker();
+
+            picker.FileTypeFilter.Add(".jpg");
+            picker.FileTypeFilter.Add(".png");
+            picker.ViewMode = PickerViewMode.Thumbnail;
+
+            StorageFile pickedFile = await picker.PickSingleFileAsync();
+            if(pickedFile != null)
+            {
+                ImgName.Text = pickedFile.Name;
+            }
         }
     }
 }

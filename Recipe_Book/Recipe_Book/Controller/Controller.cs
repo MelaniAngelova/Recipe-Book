@@ -10,9 +10,14 @@ namespace Recipe_Book.Controller
 {
     class Controller
     {
+        public Controller()
+        {
+
+        }
+
         recipebookContext context = new recipebookContext();
 
-        private void AddRecipe(Recipe recipe, List<Product> products)
+        public void AddRecipe(Recipe recipe, List<Product> products)
         {
             if(context.Recipes.Where(x => x.Name == recipe.Name) == null)
             {
