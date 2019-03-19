@@ -12,7 +12,7 @@ namespace Recipe_Book.Models
 
         public int Id { get; }
         public string Name { get; set; }
-        public int? Description { get; set; }
+        public string Description { get; set; }
         public int CategoryId { get; set; }
         public string ImgName { get; set; }
 

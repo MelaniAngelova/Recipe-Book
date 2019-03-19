@@ -137,7 +137,8 @@ namespace Recipe_Book.Models
 
                 entity.Property(e => e.Description)
                     .HasColumnName("description")
-                    .HasColumnType("int(11)");
+                    .HasMaxLength(2000)
+                    .IsUnicode(false);
 
                 entity.Property(e => e.ImgName)
                     .HasColumnName("img_name")

@@ -22,8 +22,9 @@ namespace Recipe_Book.Controller
         {
             Recipe recipe = new Recipe();
             recipe.Name = args[0];
-            //var category = context.Categories.Where(x => x.Name == args[2]).First();
-            //recipe.CategoryId = category.Id;
+            recipe.Description = args[1];
+            var category = context.Categories.Where(x => x.Name == args[2]).First();
+            recipe.CategoryId = category.Id;
             if (args.Count() >= 5) { recipe.ImgName = args[4]; }
             var products = args[3].Split(new char[2] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries).ToList();
             
