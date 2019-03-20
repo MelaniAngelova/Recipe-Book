@@ -26,6 +26,10 @@ namespace Recipe_Book
         {
             this.InitializeComponent();
         }
-        
+
+        private void SearchRecipe_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
