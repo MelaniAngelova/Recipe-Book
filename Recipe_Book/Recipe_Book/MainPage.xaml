@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Height="394" Margin="530,-309,0,0" VerticalAlignment="Top" Width="89" RenderTransformOrigin="-2.051,1.591"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="394" Margin="246,248,0,0" VerticalAlignment="Top" Width="89" RenderTransformOrigin="-2.051,1.591"/>
 
     </Grid>
 </Page>
