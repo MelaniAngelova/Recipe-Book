@@ -80,3 +80,15 @@ D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\qualifiers.txt.intermediate
 D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\ProjectArchitectures.txt
 D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636758480200000000.json
+D:\Курсове за ИТ-програмист\7 етап\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\Recipe_Book.csprojAssemblyReference.cache
+D:\Курсове за ИТ-програмист\7 етап\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\App.g.i.cs
+D:\Курсове за ИТ-програмист\7 етап\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\App.g.cs
+D:\Курсове за ИТ-програмист\7 етап\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\MainPage.g.i.cs
+D:\Курсове за ИТ-програмист\7 етап\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\MainPage.g.cs
+D:\Курсове за ИТ-програмист\7 етап\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\App.xaml
+D:\Курсове за ИТ-програмист\7 етап\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\MainPage.xaml
+D:\Курсове за ИТ-програмист\7 етап\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\App.xbf
+D:\Курсове за ИТ-програмист\7 етап\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\MainPage.xbf
+D:\Курсове за ИТ-програмист\7 етап\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\XamlSaveStateFile.xml
+D:\Курсове за ИТ-програмист\7 етап\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\Recipe_Book.exe
+D:\Курсове за ИТ-програмист\7 етап\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\Recipe_Book.pdb
