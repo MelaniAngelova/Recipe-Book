@@ -6,12 +6,10 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="988.764">
-    <StackPanel Padding="50" Orientation="Vertical" Background="WhiteSmoke" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-        <Button Name="InsertRecipe" Content="Добави Рецепта" FontSize="100" Width="1500" Padding="20" Margin="0,100,0,50"  HorizontalAlignment="Center" VerticalAlignment="Stretch" Height="200"/>
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-        <Button Name="SearchRecipe" Content="Търси Рецепта" FontSize="100" Width="1500" Padding="20" Margin="0,0,0,50"  HorizontalAlignment="Center" VerticalAlignment="Stretch" Height="200" />
+    <Grid>
+        <Button Content="Button" HorizontalAlignment="Left" Height="394" Margin="246,248,0,0" VerticalAlignment="Top" Width="89" RenderTransformOrigin="-2.051,1.591"/>
 
-        <Button Name="FavoriteRecipies" Content="Любими" FontSize="100" Width="1500"  Padding="20" Margin="0,0,0,0"  HorizontalAlignment="Center" VerticalAlignment="Stretch" Height="200" />
-    </StackPanel>
+    </Grid>
 </Page>
