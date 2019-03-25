@@ -56,7 +56,7 @@
                 </ListView.ItemTemplate>
             </ListView>-->
         </StackPanel>
-        
+
         <StackPanel Name="AdditionalCreatePanel" Visibility="Visible" Padding="40">
             <!-- Title -->
             <TextBlock Text="Попълни продуктите" FontSize="50" FontWeight="Bold" Margin="0 0 0 30" />
@@ -65,7 +65,7 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock Name="ProductName" FontSize="20" Padding="10" Width="300"/>
+                            <TextBlock Text="{Binding NewProducts}" Name="ProductName" FontSize="20" Padding="10" Width="300"/>
                             <ComboBox Name="ProductType" FontSize="20"/>
                             <TextBox Name="ProductPrice" FontSize="20"/>
                         </StackPanel>

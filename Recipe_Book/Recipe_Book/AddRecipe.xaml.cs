@@ -27,9 +27,17 @@ namespace Recipe_Book
     /// </summary>
     public sealed partial class AddRecipe : Page
     {
+        recipebookContext context = new recipebookContext();
+
         public AddRecipe()
         {
             this.InitializeComponent();
+        }
+
+        private void UpdateGrid()
+        {
+            ProductsGrid.ItemsSource = NewProducts;
+            //ProductsGrid.ItemsSource = context.Products.All(x => !newProducts.Contains(x.Name));
         }
 
         private void BtnAdd_Click(object sender, RoutedEventArgs e)
@@ -37,9 +45,11 @@ namespace Recipe_Book
 
             AdditionalCreatePanel.Visibility = Visibility.Visible;
             CreatePage createPage = new CreatePage();
-            createPage.ManageInput(RecipeName.Text, RecipeDescription.Text, RecipeCategory.Text, RecipeProducts.Text, ImgName.Text);
-
+            NewProducts = createPage.ManageInput(RecipeName.Text, RecipeDescription.Text, RecipeCategory.Text, RecipeProducts.Text, ImgName.Text);
+            UpdateGrid();
         }
+
+        public List<string> NewProducts { get; private set; } = new List<string>();
 
         private async void BtnImgLoad_ClickAsync(object sender, RoutedEventArgs e)
         {

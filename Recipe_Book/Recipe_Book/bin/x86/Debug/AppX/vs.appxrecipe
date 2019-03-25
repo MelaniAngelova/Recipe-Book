@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-03-18T20:59:50.855</Modified>
+      <Modified>2019-03-24T13:20:09.760</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\Recipe_Book.exe">
       <PackagePath>entrypoint\Recipe_Book.exe</PackagePath>
-      <Modified>2019-03-18T20:59:50.033</Modified>
+      <Modified>2019-03-24T13:20:09.284</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\google.protobuf\3.5.1\lib\netstandard1.0\Google.Protobuf.dll">
       <PackagePath>Google.Protobuf.dll</PackagePath>
@@ -174,19 +174,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\Recipe_Book.xr.xml">
       <PackagePath>Recipe_Book.xr.xml</PackagePath>
-      <Modified>2019-03-18T20:59:49.626</Modified>
+      <Modified>2019-03-24T13:09:26.834</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-03-18T20:59:49.654</Modified>
+      <Modified>2019-03-24T13:20:08.888</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\AddRecipe.xbf">
       <PackagePath>AddRecipe.xbf</PackagePath>
-      <Modified>2019-03-18T20:59:49.654</Modified>
+      <Modified>2019-03-24T13:20:08.889</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-03-18T20:59:49.655</Modified>
+      <Modified>2019-03-24T13:20:08.889</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -198,7 +198,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\Core\Recipe_Book.exe">
       <PackagePath>Recipe_Book.exe</PackagePath>
-      <Modified>2019-03-18T20:59:50.845</Modified>
+      <Modified>2019-03-24T13:20:09.755</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

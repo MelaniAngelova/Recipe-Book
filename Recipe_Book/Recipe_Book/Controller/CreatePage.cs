@@ -18,17 +18,28 @@ namespace Recipe_Book.Controller
                 
         }
 
-        public void ManageInput(params string[] args)
+        public List<string> ManageInput(params string[] args)
         {
             Recipe recipe = new Recipe();
             recipe.Name = args[0];
             recipe.Description = args[1];
-            var category = context.Categories.Where(x => x.Name == args[2]).First();
-            recipe.CategoryId = category.Id;
+            //var category = context.Categories.Where(x => x.Name == args[2]).First();
+            //recipe.CategoryId = category.Id;
             if (args.Count() >= 5) { recipe.ImgName = args[4]; }
             var products = args[3].Split(new char[2] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries).ToList();
-            
-            
+
+            var newProducts = new List<string>();
+            foreach(var productName in products)
+            {
+                //uncomment on connection established
+                //if(context.Products.Any(p => p.Name == productName) == false)
+                //{
+                //  newProducts.Add(productName);
+                //}
+                newProducts.Add(productName);
+            }
+
+            return newProducts;
         }
     }
 }
