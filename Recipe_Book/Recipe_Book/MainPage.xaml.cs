@@ -31,5 +31,10 @@ namespace Recipe_Book
         {
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
