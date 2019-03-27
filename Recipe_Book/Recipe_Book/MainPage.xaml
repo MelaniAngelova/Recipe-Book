@@ -7,5 +7,48 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="988.764">
-    
+
+    <StackPanel Orientation="Vertical">
+        <RelativePanel>
+            <Button Name="Menu_button" Height="60" Width="60" Padding="0" Background="Transparent" Click="Menu_button_Click">
+                <Image Source="/../../Assets/Images/menu_button.png"/>
+            </Button>
+        </RelativePanel>
+        <StackPanel Orientation="Horizontal">
+            <SplitView Name="MenuSplitView" 
+                   DisplayMode="CompactInline" 
+                   OpenPaneLength="200" 
+                   CompactPaneLength="60" 
+                   HorizontalAlignment="Left">
+                <SplitView.Pane>
+                    <ListBox SelectionMode="Single" Name="PagesListBox" SelectionChanged="PagesListBox_SelectionChanged">
+                        <ListBoxItem Name="HomePageItem" Height="60">
+                            <StackPanel Orientation="Horizontal">
+                                <Image/>
+                                <TextBlock Text="abc"/>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem Name="LookupPageItem" Height="60">
+                            <StackPanel Orientation="Horizontal">
+                                <Image/>
+                                <TextBlock Text="abc"/>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem Name="CreatePageItem" Height="60">
+                            <StackPanel Orientation="Horizontal">
+                                <Image/>
+                                <TextBlock/>
+                            </StackPanel>
+                        </ListBoxItem>
+                    </ListBox>
+                </SplitView.Pane>
+                <SplitView.Content>
+                    <TextBlock Name="ResultTextBlock"/>
+                </SplitView.Content>
+            </SplitView>
+            <Frame Name="MainFrame">
+
+            </Frame>
+        </StackPanel>
+    </StackPanel>
 </Page>

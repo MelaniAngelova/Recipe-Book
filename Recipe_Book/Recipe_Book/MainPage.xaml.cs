@@ -27,5 +27,25 @@ namespace Recipe_Book
             this.InitializeComponent();
         }
         
+        private void Menu_button_Click(object sender, RoutedEventArgs e)
+        {
+            MenuSplitView.IsPaneOpen = !MenuSplitView.IsPaneOpen;
+        }
+
+        private void PagesListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (HomePageItem.IsSelected)
+            {
+                MainFrame.Navigate(typeof(HomePage));
+            }
+            else if(LookupPageItem.IsSelected)
+            {
+                MainFrame.Navigate(typeof(FindRecipe));
+            }
+            else if(CreatePageItem.IsSelected)
+            {
+                MainFrame.Navigate(typeof(AddRecipe));
+            }
+        }
     }
 }

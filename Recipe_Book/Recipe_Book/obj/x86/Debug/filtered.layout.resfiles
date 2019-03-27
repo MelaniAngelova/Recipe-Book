@@ -1,5 +1,7 @@
 WinMetadata\Windows.winmd
+Assets\Images\menu_button.png
 Assets\LockScreenLogo.scale-200.png
+Assets\menu_button.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
 Assets\Square44x44Logo.scale-200.png
@@ -8,6 +10,8 @@ Assets\StoreLogo.png
 Assets\Wide310x150Logo.scale-200.png
 AddRecipe.xbf
 App.xbf
+FindRecipe.xbf
+HomePage.xbf
 MainPage.xbf
 Recipe_Book.xr.xml
 Properties\Default.rd.xml

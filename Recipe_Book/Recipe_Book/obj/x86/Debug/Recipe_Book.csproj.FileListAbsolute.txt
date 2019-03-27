@@ -97,3 +97,13 @@ D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\AddRecipe.xbf
 D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\AddRecipe.g.i.cs
 D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\AddRecipe.g.cs
 D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\AddRecipe.xbf
+D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\FindRecipe.xbf
+D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\HomePage.xbf
+D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\FindRecipe.g.i.cs
+D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\FindRecipe.g.cs
+D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\HomePage.g.i.cs
+D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\HomePage.g.cs
+D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\FindRecipe.xaml
+D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\HomePage.xaml
+D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\FindRecipe.xbf
+D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\HomePage.xbf

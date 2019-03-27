@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>63BD44B8268A81A5BDB9D59E0A7F000E7562C8D635133A2599422EDC91F6E428</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>0A999924350C4D6AD81EAE60D3A267DA2B4FEDD4F6AE8FC84520083FFE02D3B2</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>5eeaf5a3-a654-454c-a387-9c0e3ed79e0c_1.0.0.0_x86__hqhyg1cvr7f3y</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>5eeaf5a3-a654-454c-a387-9c0e3ed79e0c_hqhyg1cvr7f3y!App</RegisteredUserModeAppID>
     <RegisteredPackageID>5eeaf5a3-a654-454c-a387-9c0e3ed79e0c</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-03-24T13:20:09.760</Modified>
+      <Modified>2019-03-27T22:19:49.790</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\Recipe_Book.exe">
       <PackagePath>entrypoint\Recipe_Book.exe</PackagePath>
-      <Modified>2019-03-24T13:20:09.284</Modified>
+      <Modified>2019-03-27T22:19:49.258</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\google.protobuf\3.5.1\lib\netstandard1.0\Google.Protobuf.dll">
       <PackagePath>Google.Protobuf.dll</PackagePath>
@@ -134,9 +134,13 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2018-10-22T23:33:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2019-03-16T09:42:45.668</Modified>
+    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\Assets\Images\menu_button.png">
+      <PackagePath>Assets\Images\menu_button.png</PackagePath>
+      <Modified>2019-03-27T20:54:21.341</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\Assets\menu_button.png">
+      <PackagePath>Assets\menu_button.png</PackagePath>
+      <Modified>2019-03-27T20:39:03.806</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -172,21 +176,33 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-01-19T18:25:23.204</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2019-03-16T09:42:45.668</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\Recipe_Book.xr.xml">
       <PackagePath>Recipe_Book.xr.xml</PackagePath>
-      <Modified>2019-03-24T13:09:26.834</Modified>
+      <Modified>2019-03-27T22:19:48.879</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-03-24T13:20:08.888</Modified>
+      <Modified>2019-03-27T22:19:48.892</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\AddRecipe.xbf">
       <PackagePath>AddRecipe.xbf</PackagePath>
-      <Modified>2019-03-24T13:20:08.889</Modified>
+      <Modified>2019-03-27T22:19:48.893</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\FindRecipe.xbf">
+      <PackagePath>FindRecipe.xbf</PackagePath>
+      <Modified>2019-03-27T22:19:48.893</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\HomePage.xbf">
+      <PackagePath>HomePage.xbf</PackagePath>
+      <Modified>2019-03-27T22:19:48.893</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-03-24T13:20:08.889</Modified>
+      <Modified>2019-03-27T22:19:48.893</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -194,11 +210,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-03-18T14:17:47.838</Modified>
+      <Modified>2019-03-27T22:09:32.221</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\Core\Recipe_Book.exe">
       <PackagePath>Recipe_Book.exe</PackagePath>
-      <Modified>2019-03-24T13:20:09.755</Modified>
+      <Modified>2019-03-27T22:19:49.768</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

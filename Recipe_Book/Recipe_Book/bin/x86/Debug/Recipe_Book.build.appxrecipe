@@ -100,8 +100,11 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\Assets\Images\menu_button.png">
+      <PackagePath>Assets\Images\menu_button.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\Assets\menu_button.png">
+      <PackagePath>Assets\menu_button.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -130,6 +133,9 @@
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\Recipe_Book.xr.xml">
       <PackagePath>Recipe_Book.xr.xml</PackagePath>
     </AppxPackagedFile>
@@ -138,6 +144,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\AddRecipe.xbf">
       <PackagePath>AddRecipe.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\FindRecipe.xbf">
+      <PackagePath>FindRecipe.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\HomePage.xbf">
+      <PackagePath>HomePage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
