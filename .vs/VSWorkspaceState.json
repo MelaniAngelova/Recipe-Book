@@ -3,8 +3,9 @@
     "",
     "\\Recipe_Book",
     "\\Recipe_Book\\Recipe_Book",
+    "\\Recipe_Book\\Recipe_Book\\Assets",
     "\\Test"
   ],
-  "SelectedNode": "\\Recipe_Book\\Recipe_Book.sln",
+  "SelectedNode": "\\Recipe_Book\\Recipe_Book\\MainPage.xaml",
   "PreviewInSolutionExplorer": false
 }
