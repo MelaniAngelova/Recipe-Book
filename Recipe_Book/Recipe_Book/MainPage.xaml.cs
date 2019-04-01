@@ -24,17 +24,27 @@ namespace Recipe_Book
     {
         public MainPage()
         {
-            this.InitializeComponent();
+             this.InitializeComponent();
         }
 
         private void SearchRecipe_Click(object sender, RoutedEventArgs e)
         {
-
+            // MAGIC 1
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            // MAGICX 2
+        }
 
+        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        {
+            mySplitView.IsPaneOpen = !mySplitView.IsPaneOpen;
+        }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            // OMG
         }
     }
 }
