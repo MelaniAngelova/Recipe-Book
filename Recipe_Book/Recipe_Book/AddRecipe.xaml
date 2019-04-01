@@ -52,12 +52,6 @@
 
             <Button Name="btnInsert" Content="Добави" FontSize="20" Width="150" Padding="20" Margin="0 0 20 0" Click="BtnInsert_Click" />
 
-            <Button Name="btnUpdate" Content="Обнови" FontSize="20" Width="150" Padding="20" Margin="0 0 20 0" Click="BtnUpdate_Click" />
-
-            <Button Name="btnSave" Content="Запази" FontSize="20" Width="150" Padding="20" Margin="0 0 20 0" Click="BtnSave_Click" />
-
-            <Button Name="btnDelete" Content="Изтрий" FontSize="20" Width="150" Padding="20" Margin="0 0 20 0" Click="BtnDelete_Click" />
-
         </StackPanel>
 
 
