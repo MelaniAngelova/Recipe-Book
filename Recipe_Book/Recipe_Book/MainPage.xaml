@@ -6,38 +6,36 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid.RowDefinitions >
+        <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <RelativePanel Margin="0,0,0,0" Grid.RowSpan="2" >
+        <RelativePanel>
             <Button x:Name="HamburgerButton" RelativePanel.AlignLeftWithPanel="True"
                     FontFamily="Segoe MDL2 Assets" FontSize="36"
-                    Content="&#xE700;" Click="HamburgerButton_Click" HorizontalAlignment="Center" Height="100" Margin="0,0,0,0" VerticalAlignment="Center" Width="100"  Background="White"/>
-            <TextBlock Name="TitleTextBlock" RelativePanel.RightOf="HamburgerButton"
-                       FontSize="28" FontWeight="Bold" Margin="30 5 0 0" />
+                    Content="&#xE700;" Click="HamburgerButton_Click" Width="100"
+                    Height="100"/>
+            <TextBlock Name="RecipeBook" RelativePanel.RightOf="HamburgerButton"
+                      FontSize="60" FontWeight="Bold" Margin="0,0,0,0" Height="100" Width="1400" HorizontalAlignment="Left" Text="Recipe Book" TextAlignment="Right" Padding="25"/>
         </RelativePanel>
-        <Grid Margin="100,0,0,0" Grid.RowSpan="2" HorizontalAlignment="Left" Width="1400" Background="White">
-            <TextBlock Margin="0,0,0,0" TextAlignment="Right" Text="Recipe Book" FontSize="60" Padding="10" FontWeight="Bold" Foreground="DarkCyan"></TextBlock>
-        </Grid>
-        <SplitView Name="mySplitView" Grid.Row="2" OpenPaneLength="200" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch">
+
+        <SplitView Name="mySplitView" Grid.Row="1" OpenPaneLength="200">
             <SplitView.Pane>
-                <ListBox Background="White" Foreground="Black" SelectionMode="Single" SelectionChanged="ListBox_SelectionChanged">
+                <ListBox SelectionMode="Single" SelectionChanged="ListBox_SelectionChanged">
                     <ListBoxItem Name="InsertRecipe">
-                        <TextBlock FontSize="24"  Text="Добави Рецепта"/>
+                        <TextBlock FontSize="23" Text="Добави Рецепта" />
                     </ListBoxItem>
                     <ListBoxItem Name="SearchRecipe">
-                        <TextBlock FontSize="24" Text="Търси Рецепта" />
+                        <TextBlock FontSize="23" Text="Търси Рецепта" />
                     </ListBoxItem>
                     <ListBoxItem Name="FavoriteRecipies">
-                        <TextBlock FontSize="24" Text="Любими" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" Width="182"/>
+                        <TextBlock FontSize="23" Text="Любими" />
                     </ListBoxItem>
                 </ListBox>
             </SplitView.Pane>
             <SplitView.Content>
-                <Frame Name="myFrame" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch"  Background="Black" />
+                <Frame Name="myFrame" Background="Black"/>
             </SplitView.Content>
         </SplitView>
     </Grid>
