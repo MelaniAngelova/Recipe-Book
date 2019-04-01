@@ -12,6 +12,11 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Storage.Pickers;
+using Windows.Storage;
+
+using Recipe_Book.Models;
+using Recipe_Book.Controller;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -22,14 +27,43 @@ namespace Recipe_Book
     /// </summary>
     public sealed partial class AddRecipe : Page
     {
+        recipebookContext context = new recipebookContext();
+
         public AddRecipe()
         {
             this.InitializeComponent();
         }
 
-        private void BtnInsert_Click(object sender, RoutedEventArgs e)
+        private void UpdateGrid()
+        {
+            ProductsGrid.ItemsSource = NewProducts;
+            //ProductsGrid.ItemsSource = context.Products.All(x => !newProducts.Contains(x.Name));
+        }
+
+        private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
 
+            AdditionalCreatePanel.Visibility = Visibility.Visible;
+            CreatePage createPage = new CreatePage();
+            NewProducts = createPage.ManageInput(RecipeName.Text, RecipeDescription.Text, RecipeCategory.Text, RecipeProducts.Text, ImgName.Text);
+            UpdateGrid();
+        }
+
+        public List<string> NewProducts { get; private set; } = new List<string>();
+
+        private async void BtnImgLoad_ClickAsync(object sender, RoutedEventArgs e)
+        {
+            var picker = new FileOpenPicker();
+
+            picker.FileTypeFilter.Add(".jpg");
+            picker.FileTypeFilter.Add(".png");
+            picker.ViewMode = PickerViewMode.Thumbnail;
+
+            StorageFile pickedFile = await picker.PickSingleFileAsync();
+            if (pickedFile != null)
+            {
+                ImgName.Text = pickedFile.Name;
+            }
         }
     }
 }
