@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-7MSE30C</Machine>
-    <WindowsUser>DELL</WindowsUser>
+    <Machine>DANI-PC</Machine>
+    <WindowsUser>Dani</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>5eeaf5a3-a654-454c-a387-9c0e3ed79e0c</PackageIdentityName>
     <PackageIdentityPublisher>CN=DELL</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\Recipe Book\Recipe_Book\Recipe_Book\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>0A999924350C4D6AD81EAE60D3A267DA2B4FEDD4F6AE8FC84520083FFE02D3B2</RegisteredManifestChecksum>
+    <LayoutDir>D:\Recipe Book\Recipe_Book\Recipe_Book\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>A3CCD9AACAEE17126601AA864933F82F4F38863960F7DFBC3548C9B3E076492E</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>5eeaf5a3-a654-454c-a387-9c0e3ed79e0c_1.0.0.0_x86__hqhyg1cvr7f3y</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>5eeaf5a3-a654-454c-a387-9c0e3ed79e0c_hqhyg1cvr7f3y!App</RegisteredUserModeAppID>
     <RegisteredPackageID>5eeaf5a3-a654-454c-a387-9c0e3ed79e0c</RegisteredPackageID>
@@ -27,118 +27,118 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\Recipe Book\Recipe_Book\Recipe_Book\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-04-01T08:37:33.164</Modified>
+      <Modified>2019-04-01T08:32:55.852</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\Recipe_Book.exe">
+    <AppxPackagedFile Include="D:\Recipe Book\Recipe_Book\Recipe_Book\bin\x86\Debug\Recipe_Book.exe">
       <PackagePath>entrypoint\Recipe_Book.exe</PackagePath>
-      <Modified>2019-04-01T08:37:32.307</Modified>
+      <Modified>2019-04-01T08:32:52.150</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\google.protobuf\3.5.1\lib\netstandard1.0\Google.Protobuf.dll">
+    <AppxPackagedFile Include="C:\Users\Dani\.nuget\packages\google.protobuf\3.5.1\lib\netstandard1.0\Google.Protobuf.dll">
       <PackagePath>Google.Protobuf.dll</PackagePath>
       <Modified>2017-12-21T18:23:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\microsoft.entityframeworkcore\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll">
+    <AppxPackagedFile Include="C:\Users\Dani\.nuget\packages\microsoft.entityframeworkcore\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll">
       <PackagePath>Microsoft.EntityFrameworkCore.dll</PackagePath>
       <Modified>2019-03-04T00:00:46.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\microsoft.entityframeworkcore.abstractions\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Abstractions.dll">
+    <AppxPackagedFile Include="C:\Users\Dani\.nuget\packages\microsoft.entityframeworkcore.abstractions\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Abstractions.dll">
       <PackagePath>Microsoft.EntityFrameworkCore.Abstractions.dll</PackagePath>
       <Modified>2019-03-04T00:00:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\microsoft.entityframeworkcore.design\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Design.dll">
+    <AppxPackagedFile Include="C:\Users\Dani\.nuget\packages\microsoft.entityframeworkcore.design\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Design.dll">
       <PackagePath>Microsoft.EntityFrameworkCore.Design.dll</PackagePath>
       <Modified>2019-03-04T00:01:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\microsoft.entityframeworkcore.relational\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Relational.dll">
+    <AppxPackagedFile Include="C:\Users\Dani\.nuget\packages\microsoft.entityframeworkcore.relational\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Relational.dll">
       <PackagePath>Microsoft.EntityFrameworkCore.Relational.dll</PackagePath>
       <Modified>2019-03-04T00:00:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\microsoft.extensions.caching.abstractions\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll">
+    <AppxPackagedFile Include="C:\Users\Dani\.nuget\packages\microsoft.extensions.caching.abstractions\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll">
       <PackagePath>Microsoft.Extensions.Caching.Abstractions.dll</PackagePath>
       <Modified>2019-03-03T23:03:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\microsoft.extensions.caching.memory\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll">
+    <AppxPackagedFile Include="C:\Users\Dani\.nuget\packages\microsoft.extensions.caching.memory\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll">
       <PackagePath>Microsoft.Extensions.Caching.Memory.dll</PackagePath>
       <Modified>2019-03-03T23:03:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\microsoft.extensions.configuration\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll">
+    <AppxPackagedFile Include="C:\Users\Dani\.nuget\packages\microsoft.extensions.configuration\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
       <Modified>2019-03-03T23:03:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\microsoft.extensions.configuration.abstractions\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll">
+    <AppxPackagedFile Include="C:\Users\Dani\.nuget\packages\microsoft.extensions.configuration.abstractions\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll">
       <PackagePath>Microsoft.Extensions.Configuration.Abstractions.dll</PackagePath>
       <Modified>2019-03-03T23:03:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\microsoft.extensions.configuration.binder\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll">
+    <AppxPackagedFile Include="C:\Users\Dani\.nuget\packages\microsoft.extensions.configuration.binder\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll">
       <PackagePath>Microsoft.Extensions.Configuration.Binder.dll</PackagePath>
       <Modified>2019-03-03T23:03:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\microsoft.extensions.dependencyinjection\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.dll">
+    <AppxPackagedFile Include="C:\Users\Dani\.nuget\packages\microsoft.extensions.dependencyinjection\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.dll">
       <PackagePath>Microsoft.Extensions.DependencyInjection.dll</PackagePath>
       <Modified>2019-03-03T23:03:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll">
+    <AppxPackagedFile Include="C:\Users\Dani\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll">
       <PackagePath>Microsoft.Extensions.DependencyInjection.Abstractions.dll</PackagePath>
       <Modified>2019-03-03T23:03:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\microsoft.extensions.logging\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.Extensions.Logging.dll">
+    <AppxPackagedFile Include="C:\Users\Dani\.nuget\packages\microsoft.extensions.logging\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.Extensions.Logging.dll">
       <PackagePath>Microsoft.Extensions.Logging.dll</PackagePath>
       <Modified>2019-03-03T23:04:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\microsoft.extensions.logging.abstractions\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll">
+    <AppxPackagedFile Include="C:\Users\Dani\.nuget\packages\microsoft.extensions.logging.abstractions\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll">
       <PackagePath>Microsoft.Extensions.Logging.Abstractions.dll</PackagePath>
       <Modified>2019-03-03T23:03:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\microsoft.extensions.options\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.Extensions.Options.dll">
+    <AppxPackagedFile Include="C:\Users\Dani\.nuget\packages\microsoft.extensions.options\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.Extensions.Options.dll">
       <PackagePath>Microsoft.Extensions.Options.dll</PackagePath>
       <Modified>2019-03-03T23:03:18.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\microsoft.extensions.primitives\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\Dani\.nuget\packages\microsoft.extensions.primitives\3.0.0-preview3.19153.1\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll">
       <PackagePath>Microsoft.Extensions.Primitives.dll</PackagePath>
       <Modified>2019-03-03T23:03:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\mysql.data\8.0.15\lib\netstandard2.0\MySql.Data.dll">
+    <AppxPackagedFile Include="C:\Users\Dani\.nuget\packages\mysql.data\8.0.15\lib\netstandard2.0\MySql.Data.dll">
       <PackagePath>MySql.Data.dll</PackagePath>
       <Modified>2019-01-28T05:41:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\mysql.data.entityframeworkcore\8.0.15\lib\netstandard2.0\MySql.Data.EntityFrameworkCore.dll">
+    <AppxPackagedFile Include="C:\Users\Dani\.nuget\packages\mysql.data.entityframeworkcore\8.0.15\lib\netstandard2.0\MySql.Data.EntityFrameworkCore.dll">
       <PackagePath>MySql.Data.EntityFrameworkCore.dll</PackagePath>
       <Modified>2019-01-28T05:41:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\remotion.linq\2.2.0\lib\portable-net45+win+wpa81+wp80\Remotion.Linq.dll">
+    <AppxPackagedFile Include="C:\Users\Dani\.nuget\packages\remotion.linq\2.2.0\lib\portable-net45+win+wpa81+wp80\Remotion.Linq.dll">
       <PackagePath>Remotion.Linq.dll</PackagePath>
       <Modified>2018-02-06T20:25:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.8\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
+    <AppxPackagedFile Include="C:\Users\Dani\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.8\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2019-03-12T20:22:24.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\system.collections.immutable\1.6.0-preview3.19128.7\lib\netstandard2.0\System.Collections.Immutable.dll">
+    <AppxPackagedFile Include="C:\Users\Dani\.nuget\packages\system.collections.immutable\1.6.0-preview3.19128.7\lib\netstandard2.0\System.Collections.Immutable.dll">
       <PackagePath>System.Collections.Immutable.dll</PackagePath>
       <Modified>2019-02-28T17:59:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\system.configuration.configurationmanager\4.4.1\lib\netstandard2.0\System.Configuration.ConfigurationManager.dll">
+    <AppxPackagedFile Include="C:\Users\Dani\.nuget\packages\system.configuration.configurationmanager\4.4.1\lib\netstandard2.0\System.Configuration.ConfigurationManager.dll">
       <PackagePath>System.Configuration.ConfigurationManager.dll</PackagePath>
       <Modified>2017-11-20T16:09:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\system.diagnostics.diagnosticsource\4.6.0-preview3.19128.7\lib\netstandard1.3\System.Diagnostics.DiagnosticSource.dll">
+    <AppxPackagedFile Include="C:\Users\Dani\.nuget\packages\system.diagnostics.diagnosticsource\4.6.0-preview3.19128.7\lib\netstandard1.3\System.Diagnostics.DiagnosticSource.dll">
       <PackagePath>System.Diagnostics.DiagnosticSource.dll</PackagePath>
       <Modified>2019-02-28T18:11:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\system.interactive.async\3.2.0\lib\netstandard2.0\System.Interactive.Async.dll">
+    <AppxPackagedFile Include="C:\Users\Dani\.nuget\packages\system.interactive.async\3.2.0\lib\netstandard2.0\System.Interactive.Async.dll">
       <PackagePath>System.Interactive.Async.dll</PackagePath>
       <Modified>2018-07-11T10:48:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\system.runtime.compilerservices.unsafe\4.6.0-preview3.19128.7\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+    <AppxPackagedFile Include="C:\Users\Dani\.nuget\packages\system.runtime.compilerservices.unsafe\4.6.0-preview3.19128.7\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
       <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
       <Modified>2019-02-28T18:00:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\system.security.cryptography.protecteddata\4.4.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll">
+    <AppxPackagedFile Include="C:\Users\Dani\.nuget\packages\system.security.cryptography.protecteddata\4.4.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll">
       <PackagePath>System.Security.Cryptography.ProtectedData.dll</PackagePath>
       <Modified>2017-07-19T07:01:34.000</Modified>
     </AppxPackagedFile>
@@ -146,125 +146,125 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2018-10-22T23:33:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\Recipe Book\Recipe_Book\Recipe_Book\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2019-03-16T09:42:45.668</Modified>
+      <Modified>2019-03-16T12:24:49.933</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\Recipe Book\Recipe_Book\Recipe_Book\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2019-01-19T18:25:23.204</Modified>
+      <Modified>2019-03-16T12:24:49.599</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\Recipe Book\Recipe_Book\Recipe_Book\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-01-19T18:25:23.204</Modified>
+      <Modified>2019-03-16T12:24:49.609</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Recipe Book\Recipe_Book\Recipe_Book\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-01-19T18:25:23.204</Modified>
+      <Modified>2019-03-16T12:24:49.619</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Recipe Book\Recipe_Book\Recipe_Book\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-01-19T18:25:23.204</Modified>
+      <Modified>2019-03-16T12:24:49.619</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\Recipe Book\Recipe_Book\Recipe_Book\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-01-19T18:25:23.204</Modified>
+      <Modified>2019-03-16T12:24:49.627</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\Recipe Book\Recipe_Book\Recipe_Book\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-01-19T18:25:23.204</Modified>
+      <Modified>2019-03-16T12:24:49.680</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Recipe Book\Recipe_Book\Recipe_Book\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-01-19T18:25:23.204</Modified>
+      <Modified>2019-03-16T12:24:49.688</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\Recipe_Book.xr.xml">
+    <AppxPackagedFile Include="D:\Recipe Book\Recipe_Book\Recipe_Book\bin\x86\Debug\Recipe_Book.xr.xml">
       <PackagePath>Recipe_Book.xr.xml</PackagePath>
-      <Modified>2019-04-01T08:23:24.012</Modified>
+      <Modified>2019-04-01T08:20:42.449</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="D:\Recipe Book\Recipe_Book\Recipe_Book\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-04-01T08:37:31.912</Modified>
+      <Modified>2019-04-01T08:32:50.793</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\AddRecipe.xbf">
+    <AppxPackagedFile Include="D:\Recipe Book\Recipe_Book\Recipe_Book\bin\x86\Debug\AddRecipe.xbf">
       <PackagePath>AddRecipe.xbf</PackagePath>
-      <Modified>2019-04-01T08:37:31.913</Modified>
+      <Modified>2019-04-01T08:32:50.795</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="D:\Recipe Book\Recipe_Book\Recipe_Book\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-04-01T08:37:31.913</Modified>
+      <Modified>2019-04-01T08:32:50.796</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2018-10-22T22:44:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\Recipe Book\Recipe_Book\Recipe_Book\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-04-01T08:25:20.844</Modified>
+      <Modified>2019-04-01T08:12:06.799</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\Core\Recipe_Book.exe">
+    <AppxPackagedFile Include="D:\Recipe Book\Recipe_Book\Recipe_Book\bin\x86\Debug\Core\Recipe_Book.exe">
       <PackagePath>Recipe_Book.exe</PackagePath>
-      <Modified>2019-04-01T08:37:33.153</Modified>
+      <Modified>2019-04-01T08:32:55.835</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
-    <ResolvedSDKReference Include="C:\Users\DELL\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\Dani\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.27404.2</Version>
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27404.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\DELL\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\Dani\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\DELL\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\Dani\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.27404.2</Version>
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27404.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\DELL\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\Dani\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\DELL\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\Dani\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.27404.2</Version>
       <Architecture>arm</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27404.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\DELL\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\Dani\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\DELL\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\Dani\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
       <Version>2.2.27505.2</Version>
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27505.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\DELL\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\Dani\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\DELL\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\Dani\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
       <Version>2.2.27505.2</Version>
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27505.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\DELL\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\Dani\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\DELL\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\Dani\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
       <Version>2.2.27505.2</Version>
       <Architecture>arm</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27505.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\DELL\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\Dani\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
