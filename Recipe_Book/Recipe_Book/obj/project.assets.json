@@ -12040,24 +12040,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELL\\.nuget\\packages\\": {},
+    "C:\\Users\\user\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Recipe-Book\\Recipe_Book\\Recipe_Book\\Recipe_Book.csproj",
+      "projectUniqueName": "D:\\Курсове за ИТ-програмист\\7 етап\\Recipe-Book\\Recipe_Book\\Recipe_Book\\Recipe_Book.csproj",
       "projectName": "Recipe_Book",
-      "projectPath": "D:\\Recipe-Book\\Recipe_Book\\Recipe_Book\\Recipe_Book.csproj",
-      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "D:\\Recipe-Book\\Recipe_Book\\Recipe_Book\\obj\\",
+      "projectPath": "D:\\Курсове за ИТ-програмист\\7 етап\\Recipe-Book\\Recipe_Book\\Recipe_Book\\Recipe_Book.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "D:\\Курсове за ИТ-програмист\\7 етап\\Recipe-Book\\Recipe_Book\\Recipe_Book\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
