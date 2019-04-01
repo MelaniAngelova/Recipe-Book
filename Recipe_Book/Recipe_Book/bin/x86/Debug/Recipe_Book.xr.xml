@@ -96,8 +96,11 @@
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Foreground" />
       <RootProperty Name="SelectionMode" />
       <RootProperty Name="Items" />
+      <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListBoxItem">
       <RootProperty Name="Name" />
@@ -110,6 +113,6 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Background" />
     </RootType>
-    <RootType FullName="HamburgerMenuApp.MainPage" />
+    <RootType FullName="Recipe_Book.MainPage" />
   </Roots.RootTypes>
 </Roots>
