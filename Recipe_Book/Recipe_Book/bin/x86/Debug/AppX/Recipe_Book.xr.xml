@@ -27,6 +27,8 @@
       <RootProperty Name="Width" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="TextAlignment" />
+      <RootProperty Name="Foreground" />
       <RootProperty Name="Name" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
@@ -56,11 +58,6 @@
       <RootProperty Name="Name" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Width" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="TextAlignment" />
-      <RootProperty Name="Text" />
-      <RootProperty Name="Padding" />
-      <RootProperty Name="FontWeight" />
     </RootType>
     <RootType FullName="Recipe_Book.AddRecipe" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">

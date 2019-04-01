@@ -39,7 +39,7 @@ namespace Recipe_Book
 
         private void HamburgerButton_Click(object sender, RoutedEventArgs e)
         {
-            // WTF
+            mySplitView.IsPaneOpen = !mySplitView.IsPaneOpen;
         }
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)

@@ -20,8 +20,8 @@
             <TextBlock x:ConnectionId='9' Name="TitleTextBlock" RelativePanel.RightOf="HamburgerButton"
                        FontSize="28" FontWeight="Bold" Margin="30 5 0 0" />
         </RelativePanel>
-        <Grid Margin="100,0,0,0" Grid.RowSpan="2" HorizontalAlignment="Left" Width="1400" Background="Black">
-            <TextBox Margin="0,0,0,0" TextAlignment="Right" Text="Recipe Book" FontSize="60" Padding="10" FontWeight="Bold" ></TextBox>
+        <Grid Margin="100,0,0,0" Grid.RowSpan="2" HorizontalAlignment="Left" Width="1400" Background="White">
+            <TextBlock Margin="0,0,0,0" TextAlignment="Right" Text="Recipe Book" FontSize="60" Padding="10" FontWeight="Bold" Foreground="DarkCyan"></TextBlock>
         </Grid>
         <SplitView x:ConnectionId='2' Name="mySplitView" Grid.Row="2" OpenPaneLength="200" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch">
             <SplitView.Pane>

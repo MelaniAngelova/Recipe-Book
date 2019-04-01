@@ -9,11 +9,10 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions >
-            <RowDefinition Height="48" />
-            <RowDefinition Height="52"/>
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <RelativePanel Margin="0,0,1400,0" Grid.RowSpan="2" >
+        <RelativePanel Margin="0,0,0,0" Grid.RowSpan="2" >
             <Button x:Name="HamburgerButton" RelativePanel.AlignLeftWithPanel="True"
                     FontFamily="Segoe MDL2 Assets" FontSize="36"
                     Content="&#xE700;" Click="HamburgerButton_Click" HorizontalAlignment="Center" Height="100" Margin="0,0,0,0" VerticalAlignment="Center" Width="100"  Background="White"/>
