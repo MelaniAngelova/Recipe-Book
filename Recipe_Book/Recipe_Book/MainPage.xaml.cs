@@ -29,12 +29,22 @@ namespace Recipe_Book
 
         private void SearchRecipe_Click(object sender, RoutedEventArgs e)
         {
-
+            // MAGIC 1
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            // MAGICX 2
+        }
 
+        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        {
+            // WTF
+        }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            // OMG
         }
     }
 }
