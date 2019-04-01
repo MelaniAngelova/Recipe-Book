@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,11 +9,16 @@ namespace Recipe_Book.Controller
 {
     class Controller
     {
+        public Controller()
+        {
+
+        }
+
         recipebookContext context = new recipebookContext();
 
-        private void AddRecipe(Recipe recipe, List<Product> products)
+        public void AddRecipe(Recipe recipe, List<Product> products)
         {
-            if(context.Recipes.Where(x => x.Name == recipe.Name) == null)
+            if (context.Recipes.Where(x => x.Name == recipe.Name) == null)
             {
                 context.Recipes.Add(recipe);
                 foreach (var product in products)
@@ -28,7 +32,7 @@ namespace Recipe_Book.Controller
                 context.SaveChanges();
                 foreach (var product in products)
                 {
-                    ProductsRecipes productsRecipes = new ProductsRecipes();
+                    ProductsRecipe productsRecipes = new ProductsRecipe();
                     productsRecipes.RecipeId = recipe.Id;
                     productsRecipes.ProductId = product.Id;
                     context.ProductsRecipes.Add(productsRecipes);
