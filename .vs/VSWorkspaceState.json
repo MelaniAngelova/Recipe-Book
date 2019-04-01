@@ -2,10 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\Recipe_Book",
-    "\\Recipe_Book\\Recipe_Book",
-    "\\Recipe_Book\\Recipe_Book\\Assets",
-    "\\Test"
+    "\\Recipe_Book\\Recipe_Book\\Assets"
   ],
-  "SelectedNode": "\\Recipe_Book\\Recipe_Book\\MainPage.xaml",
+  "SelectedNode": "\\Recipe_Book\\Recipe_Book.sln",
   "PreviewInSolutionExplorer": false
 }

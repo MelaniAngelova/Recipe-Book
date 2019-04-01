@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipe_Book", "Recipe_Book\Recipe_Book.csproj", "{2F66A3C2-0390-4013-8DE0-158F2C063E03}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "app", "app\app.csproj", "{EEAD1897-E27D-4062-883E-6D6C84C70CC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,26 @@ Global
 		{2F66A3C2-0390-4013-8DE0-158F2C063E03}.Release|x86.ActiveCfg = Release|x86
 		{2F66A3C2-0390-4013-8DE0-158F2C063E03}.Release|x86.Build.0 = Release|x86
 		{2F66A3C2-0390-4013-8DE0-158F2C063E03}.Release|x86.Deploy.0 = Release|x86
+		{EEAD1897-E27D-4062-883E-6D6C84C70CC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEAD1897-E27D-4062-883E-6D6C84C70CC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEAD1897-E27D-4062-883E-6D6C84C70CC2}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{EEAD1897-E27D-4062-883E-6D6C84C70CC2}.Debug|ARM.Build.0 = Debug|Any CPU
+		{EEAD1897-E27D-4062-883E-6D6C84C70CC2}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{EEAD1897-E27D-4062-883E-6D6C84C70CC2}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{EEAD1897-E27D-4062-883E-6D6C84C70CC2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EEAD1897-E27D-4062-883E-6D6C84C70CC2}.Debug|x64.Build.0 = Debug|Any CPU
+		{EEAD1897-E27D-4062-883E-6D6C84C70CC2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EEAD1897-E27D-4062-883E-6D6C84C70CC2}.Debug|x86.Build.0 = Debug|Any CPU
+		{EEAD1897-E27D-4062-883E-6D6C84C70CC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEAD1897-E27D-4062-883E-6D6C84C70CC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEAD1897-E27D-4062-883E-6D6C84C70CC2}.Release|ARM.ActiveCfg = Release|Any CPU
+		{EEAD1897-E27D-4062-883E-6D6C84C70CC2}.Release|ARM.Build.0 = Release|Any CPU
+		{EEAD1897-E27D-4062-883E-6D6C84C70CC2}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{EEAD1897-E27D-4062-883E-6D6C84C70CC2}.Release|ARM64.Build.0 = Release|Any CPU
+		{EEAD1897-E27D-4062-883E-6D6C84C70CC2}.Release|x64.ActiveCfg = Release|Any CPU
+		{EEAD1897-E27D-4062-883E-6D6C84C70CC2}.Release|x64.Build.0 = Release|Any CPU
+		{EEAD1897-E27D-4062-883E-6D6C84C70CC2}.Release|x86.ActiveCfg = Release|Any CPU
+		{EEAD1897-E27D-4062-883E-6D6C84C70CC2}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
