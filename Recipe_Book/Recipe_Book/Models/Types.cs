@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace app.Models
+namespace Recipe_Book.Models
 {
-    public partial class Types
+    public partial class Type
     {
-        public Types()
+        public Type()
         {
-            Products = new HashSet<Products>();
+            Products = new HashSet<Product>();
         }
 
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public virtual ICollection<Products> Products { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
     }
 }
