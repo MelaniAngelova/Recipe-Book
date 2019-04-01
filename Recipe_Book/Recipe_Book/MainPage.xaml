@@ -26,13 +26,13 @@
         <SplitView Name="mySplitView" Grid.Row="2" OpenPaneLength="200" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch">
             <SplitView.Pane>
                 <ListBox Background="White" Foreground="Black" SelectionMode="Single" SelectionChanged="ListBox_SelectionChanged">
-                    <ListBoxItem Name="Insert Recipe">
+                    <ListBoxItem Name="InsertRecipe">
                         <TextBlock FontSize="24"  Text="Добави Рецепта"/>
                     </ListBoxItem>
-                    <ListBoxItem Name="Search Recipe">
+                    <ListBoxItem Name="SearchRecipe">
                         <TextBlock FontSize="24" Text="Търси Рецепта" />
                     </ListBoxItem>
-                    <ListBoxItem Name="Favorite Recipies">
+                    <ListBoxItem Name="FavoriteRecipies">
                         <TextBlock FontSize="24" Text="Любими" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" Width="182"/>
                     </ListBoxItem>
                 </ListBox>

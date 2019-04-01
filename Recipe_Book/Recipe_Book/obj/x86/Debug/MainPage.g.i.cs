@@ -47,6 +47,9 @@ Recipies;
 
         partial void UnloadObject(global::Windows.UI.Xaml.DependencyObject unloadableObject);
 
+        private global::Windows.UI.Xaml.Controls.ListBoxItem InsertRecipe;
+        private global::Windows.UI.Xaml.Controls.ListBoxItem SearchRecipe;
+        private global::Windows.UI.Xaml.Controls.ListBoxItem FavoriteRecipies;
     }
 }
 
