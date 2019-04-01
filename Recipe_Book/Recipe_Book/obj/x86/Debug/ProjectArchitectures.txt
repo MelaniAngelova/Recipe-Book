@@ -1,1 +1,1 @@
-D:\Recipe Book\Recipe_Book\Recipe_Book\Recipe_Book.csproj;x86
+D:\Курсове за ИТ-програмист\7 етап\Recipe-Book\Recipe_Book\Recipe_Book\Recipe_Book.csproj;x86

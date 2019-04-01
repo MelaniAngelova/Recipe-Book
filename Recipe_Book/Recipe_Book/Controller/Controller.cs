@@ -28,7 +28,7 @@ namespace Recipe_Book.Controller
                 context.SaveChanges();
                 foreach (var product in products)
                 {
-                    ProductsRecipes productsRecipes = new ProductsRecipes();
+                    ProductsRecipe productsRecipes = new ProductsRecipe();
                     productsRecipes.RecipeId = recipe.Id;
                     productsRecipes.ProductId = product.Id;
                     context.ProductsRecipes.Add(productsRecipes);
