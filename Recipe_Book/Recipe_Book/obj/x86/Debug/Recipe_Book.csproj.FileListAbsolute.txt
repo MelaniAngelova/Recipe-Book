@@ -96,3 +96,4 @@ D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\AddRecipe.g.i.cs
 D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\AddRecipe.g.cs
 D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\AddRecipe.xaml
 D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\AddRecipe.xbf
+D:\Recipe-Book\Recipe_Book\Recipe_Book\bin\x86\Debug\AddRecipe.xbf
