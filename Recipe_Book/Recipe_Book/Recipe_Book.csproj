@@ -129,12 +129,6 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\Categories.cs" />
-    <Compile Include="Models\Products.cs" />
-    <Compile Include="Models\ProductsRecipes.cs" />
-    <Compile Include="Models\recipebookContext.cs" />
-    <Compile Include="Models\Recipes.cs" />
-    <Compile Include="Models\Types.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
