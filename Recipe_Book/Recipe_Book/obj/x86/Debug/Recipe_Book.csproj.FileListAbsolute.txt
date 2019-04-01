@@ -180,3 +180,7 @@ D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\qualifiers.txt.intermediate
 D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\ProjectArchitectures.txt
 D:\Recipe-Book\Recipe_Book\Recipe_Book\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636758480200000000.json
+D:\Recipe Book\Recipe_Book\Recipe_Book\obj\x86\Debug\SearchRecipe.g.i.cs
+D:\Recipe Book\Recipe_Book\Recipe_Book\obj\x86\Debug\SearchRecipe.g.cs
+D:\Recipe Book\Recipe_Book\Recipe_Book\obj\x86\Debug\SearchRecipe.xaml
+D:\Recipe Book\Recipe_Book\Recipe_Book\obj\x86\Debug\SearchRecipe.xbf

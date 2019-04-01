@@ -8,13 +8,13 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <StackPanel Padding="50">
+    <StackPanel Background="Black"  Padding="50">
 
 
 
         <!-- Title -->
 
-        <TextBlock Text="Добави рецепта" FontSize="50" FontWeight="Bold" Margin="0 0 0 20" />
+        <TextBlock Foreground="White" Text="Добави рецепта" FontSize="50" FontWeight="Bold" Margin="0 0 0 20" />
 
 
 
@@ -22,15 +22,15 @@
 
         <StackPanel Orientation="Horizontal">
 
-            <TextBlock Text="Име" FontSize="20" Width="200" />
+            <TextBlock Foreground="White" Text="Име" FontSize="20" Width="200" />
 
-            <TextBox Name="RecipeName" FontSize="20" Width="400" />
+            <TextBox  Name="RecipeName" FontSize="20" Width="400" />
 
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Margin="0 20 0 20">
 
-            <TextBlock Text="Описание" FontSize="20" Width="200" />
+            <TextBlock Foreground="White" Text="Описание" FontSize="20" Width="200" />
 
             <TextBox Name="RecipeDescription" FontSize="20" Width="400" />
 
@@ -38,7 +38,7 @@
 
         <StackPanel Orientation="Horizontal">
 
-            <TextBlock Text="Категотия" FontSize="20" Width="200" />
+            <TextBlock Foreground="White" Text="Категотия" FontSize="20" Width="200" />
 
             <TextBox Name="RecipeCategory" FontSize="20" Width="400" />
 
@@ -56,33 +56,6 @@
 
 
 
-        <!-- Grid -->
-
-        <ListView Name="RecipeGrid" Height="400">
-
-            <ListView.ItemTemplate>
-
-                <DataTemplate>
-
-                    <StackPanel Orientation="Horizontal">
-
-                        <TextBlock Text="{Binding name}"  FontSize="20" Padding="10" Width="300" />
-
-                        <TextBlock Text="{Binding description}" FontSize="20" Padding="10" Width="300"/>
-
-                        <TextBlock Text="{Binding category}" FontSize="20" Padding="10" Width="300" />
-
-                    </StackPanel>
-
-                </DataTemplate>
-
-            </ListView.ItemTemplate>
-
-        </ListView>
-
-
-
-
-
+        <!-- Grid -->      
     </StackPanel>
 </Page>
