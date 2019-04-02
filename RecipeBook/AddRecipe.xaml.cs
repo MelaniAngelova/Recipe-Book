@@ -1,0 +1,69 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.Foundation;
+using Windows.Foundation.Collections;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Controls.Primitives;
+using Windows.UI.Xaml.Data;
+using Windows.UI.Xaml.Input;
+using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Navigation;
+using Windows.Storage.Pickers;
+using Windows.Storage;
+
+using RecipeBook.Models;
+using RecipeBook.Controller;
+
+// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
+
+namespace RecipeBook
+{
+    /// <summary>
+    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// </summary>
+    public sealed partial class AddRecipe : Page
+    {
+        recipebookContext context = new recipebookContext();
+
+        public AddRecipe()
+        {
+            this.InitializeComponent();
+        }
+
+        private void UpdateGrid()
+        {
+            ProductsGrid.ItemsSource = NewProducts;
+            //ProductsGrid.ItemsSource = context.Products.All(x => !newProducts.Contains(x.Name));
+        }
+
+        private void BtnAdd_Click(object sender, RoutedEventArgs e)
+        {
+
+            AdditionalCreatePanel.Visibility = Visibility.Visible;
+            CreatePage createPage = new CreatePage();
+            NewProducts = createPage.ManageInput(RecipeName.Text, RecipeDescription.Text, RecipeCategory.Text, RecipeProducts.Text, ImgName.Text);
+            UpdateGrid();
+        }
+
+        public List<string> NewProducts { get; private set; } = new List<string>();
+
+        private async void BtnImgLoad_ClickAsync(object sender, RoutedEventArgs e)
+        {
+            var picker = new FileOpenPicker();
+
+            picker.FileTypeFilter.Add(".jpg");
+            picker.FileTypeFilter.Add(".png");
+            picker.ViewMode = PickerViewMode.Thumbnail;
+
+            StorageFile pickedFile = await picker.PickSingleFileAsync();
+            if (pickedFile != null)
+            {
+                ImgName.Text = pickedFile.Name;
+            }
+        }
+    }
+}
