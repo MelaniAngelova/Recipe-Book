@@ -23,10 +23,10 @@
          DisplayMode="CompactOverlay" 
 CompactPaneLength="50" OpenPaneLength="300" 
 
-               Background="Navy" 
-               PaneBackground="Cyan" 
+               Background="Orange" 
+               PaneBackground="DarkRed" 
             
-               Foreground="Blue">
+               Foreground="WhiteSmoke">
 
             
             
@@ -35,11 +35,11 @@ CompactPaneLength="50" OpenPaneLength="300"
                 <StackPanel>
 
                    
-                    <ToggleButton x:Name="HamburgerButton" Style="{StaticResource HamburgerButtonStyle}" Click="HamburgerButton_Click" />
+                    <ToggleButton x:Name="HamburgerButton" Background ="DarkRed" Foreground="White" Style="{StaticResource HamburgerButtonStyle}" Click="HamburgerButton_Click" />
 
 <!-- 1-->
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="&#xE710;" FontSize="20" Width="48" Height="48" FontFamily="Segoe MDL2 Assets" TextAlignment="Center" Padding="0 14 0 0"/>
+                    <TextBlock Text="&#xE710;"  FontSize="20" Width="48" Height="48" FontFamily="Segoe MDL2 Assets" TextAlignment="Center" Padding="0 14 0 0"/>
                     <TextBlock FontSize="24" Padding="20" Text="Добави" Tapped="AddRecipe_Tapped" />
                 </StackPanel>
                     
