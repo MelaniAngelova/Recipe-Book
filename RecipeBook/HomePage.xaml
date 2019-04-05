@@ -9,6 +9,6 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <StackPanel Background="DarkRed">
-        <Image x:Name="img1" Width="1100" Height="1000" Source="Assets/apple.png" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        <Image x:Name="img1" Width="1200" Height="1000" Source="Assets/apple.png" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
     </StackPanel>
 </Page>
