@@ -13,35 +13,14 @@ namespace RecipeBook.Controller
         }
 
         recipebookContext context = new recipebookContext();
-
-        public void AddRecipe(Recipe recipe, List<Product> products)
+        
+        public void UpdateProduct(Product product)
         {
-            if (context.Recipes.Where(x => x.Name == recipe.Name) == null)
-            {
-                context.Recipes.Add(recipe);
-                foreach (var product in products)
-                {
-                    if (context.Products.Where(x => x.Name == product.Name) == null)
-                    {
-                        context.Products.Add(product);
-                    }
-                    else { }
-                }
-                context.SaveChanges();
-                foreach (var product in products)
-                {
-                    ProductsRecipe productsRecipes = new ProductsRecipe();
-                    productsRecipes.RecipeId = recipe.Id;
-                    productsRecipes.ProductId = product.Id;
-                    context.ProductsRecipes.Add(productsRecipes);
-                }
-            }
-            else { }
-        }
-
-        private Recipe GetRecipeByName(int id)
-        {
-            return context.Recipes.First();
+            var oldProductId = context.Products.Where(x => x.Name == product.Name).Select(x => x.Id).ToList().First();
+            var oldProduct = context.Products.Find(oldProductId);
+            oldProduct.TypeId = product.TypeId;
+            oldProduct.Price = product.Price;
+            context.SaveChanges();
         }
     }
 }

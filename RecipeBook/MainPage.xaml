@@ -7,63 +7,43 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <!-- Resourses -->
-    <Page.Resources>
-        <Style x:Key="HamburgerButtonStyle" TargetType="ToggleButton">
-            <Setter Property="Content" Value="&#xE700;" />
-            <Setter Property="FontFamily" Value="Segoe MDL2 Assets" />
-            <Setter Property="FontSize" Value="20" />
-            <Setter Property="MinHeight" Value="48" />
-            <Setter Property="MinWidth" Value="48" />
-        </Style>
-    </Page.Resources>
-
-    <!-- The UI -->
-        <SplitView Name="MenuContainer"
-         DisplayMode="CompactOverlay" 
-CompactPaneLength="50" OpenPaneLength="300" 
-
-               Background="Navy" 
-               PaneBackground="Cyan" 
-            
-               Foreground="Blue">
-
-            
-            
-            <!-- Menu -->
+    <StackPanel Orientation="Vertical">
+        <RelativePanel>            
+            <Button Background="#E60039" Name="Menu_button" Height="60" Width="60" FontSize="34" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" Click="Menu_button_Click"/>
+            <TextBlock Name="PageName" Margin="20 0 0 0" Height="60" FontSize="42" FontWeight="Bold" Width="Auto" RelativePanel.RightOf="Menu_button" />
+        </RelativePanel>
+        <SplitView Name="MenuSplitView" 
+                   DisplayMode="CompactOverlay" 
+                   OpenPaneLength="200" 
+                   CompactPaneLength="60" 
+                   HorizontalAlignment="Left">
             <SplitView.Pane>
-                <StackPanel>
-
-                   
-                    <ToggleButton x:Name="HamburgerButton" Style="{StaticResource HamburgerButtonStyle}" Click="HamburgerButton_Click" />
-
-<!-- 1-->
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="&#xE710;" FontSize="20" Width="48" Height="48" FontFamily="Segoe MDL2 Assets" TextAlignment="Center" Padding="0 14 0 0"/>
-                    <TextBlock FontSize="24" Padding="20" Text="Добави" Tapped="AddRecipe_Tapped" />
-                </StackPanel>
-                    
-                <!-- 2-->
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="&#xE71E;" FontSize="20" Width="48" Height="48" FontFamily="Segoe MDL2 Assets" TextAlignment="Center" Padding="0 14 0 0"/>
-                    <TextBlock FontSize="24" Padding="20" Text="Търси" Tapped="SearchRecipe_Tapped" />
-                </StackPanel>
-
-                <!-- 3-->
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="&#xE734;" FontSize="20" Width="48" Height="48" FontFamily="Segoe MDL2 Assets" TextAlignment="Center" Padding="0 14 0 0"/>
-                    <TextBlock FontSize="24" Padding="20" Text="Любими" Tapped="FavoriteRecipe_Tapped" />
-                </StackPanel>
-
-                </StackPanel>
-
+                <ListBox SelectionMode="Single" Name="PagesListBox" SelectionChanged="PagesListBox_SelectionChanged">
+                    <ListBoxItem Name="HomePageItem" Background="#980026" Height="60" Padding="0">
+                        <StackPanel Orientation="Horizontal" Height="60">
+                            <TextBlock Width="60" Height="34" TextAlignment="Center" FontSize="34" FontFamily="Segoe MDL2 Assets" Text="&#xE80F;"/>
+                            <TextBlock Height="34" Margin="10 0 0 0" Width="130" Text="Начало" FontSize="26"/>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="CreatePageItem" Background="#70001C" Height="60" Padding="0">
+                        <StackPanel Orientation="Horizontal" Height="60">
+                            <TextBlock Width="60" Height="34" TextAlignment="Center" FontSize="34" FontFamily="Segoe MDL2 Assets" Text="&#xE710;"/>
+                            <TextBlock Height="34" Margin="10 0 0 0" Width="130" Text="Добави" FontSize="26"/>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="LookupPageItem" Background="#490012" Height="60" Padding="0">
+                        <StackPanel Orientation="Horizontal" Height="60">
+                            <TextBlock Width="60" Height="34" TextAlignment="Center" FontSize="34" FontFamily="Segoe MDL2 Assets" Text="&#xE11A;"/>
+                            <TextBlock Height="34" Margin="10 0 0 0" Width="130" Text="Потърси" FontSize="26"/>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="BlankSpace" Background="#220008" Height="720" IsEnabled="false" >
+                    </ListBoxItem>
+                </ListBox>
             </SplitView.Pane>
-
-            <!-- Content -->
             <SplitView.Content>
-                <Frame Name="Екран" />
+                <Frame Name="MainFrame"/>
             </SplitView.Content>
         </SplitView>
-
-
+    </StackPanel>
 </Page>

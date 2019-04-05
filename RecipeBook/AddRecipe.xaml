@@ -8,43 +8,60 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <StackPanel Orientation="Horizontal" Background="Lime">
-        <StackPanel Padding="40">
-            <!-- Title -->
-            <TextBlock Text="Добави рецепта" FontSize="50" FontWeight="Bold" Margin="0 0 0 30" />
-            <!-- Product -->
-            <StackPanel Orientation="Horizontal" Margin="0 10 0 10">
-                <TextBlock Text="Име" VerticalAlignment="Center" FontSize="20" Width="200" />
-                <TextBox Name="RecipeName" FontSize="20" Width="400" />
+    <StackPanel Padding="20">
+        <StackPanel Orientation="Horizontal" Margin="0 10 0 10">
+            <TextBlock Text="Име" VerticalAlignment="Center" FontSize="20" Width="200" />
+            <TextBox Name="RecipeName" FontSize="20" Width="400" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 10 0 10">
+            <TextBlock Text="Описание" VerticalAlignment="Center" FontSize="20" Width="200" />
+            <TextBox TextWrapping="Wrap" Name="RecipeDescription" FontSize="14" Height="120" Width="400" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 10 0 10">            
+            <TextBlock Text="Категория" VerticalAlignment="Center" FontSize="20" Width="200" />
+            <ComboBox ItemsSource="{x:Bind categories}" Name="RecipeCategory" FontSize="20" Width="400"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 10 0 10">
+            <TextBlock Text="Продукти" VerticalAlignment="Center" FontSize="20" Width="200" />
+            <StackPanel Width="400" Orientation="Vertical">
+                <ScrollViewer Name="scrollViewProducts" Margin="0 0 0 20" VerticalScrollMode="Enabled" VerticalScrollBarVisibility="Visible" Visibility="Collapsed" Height="Auto" MaxHeight="150">
+                    <ListView Name="ProductsListView" SelectionChanged="ProductsListView_SelectionChanged" ItemsSource="{x:Bind newProducts}"/>
+                </ScrollViewer>
+                <StackPanel Orientation="Horizontal">
+                    <Button Name="btnProductAdd" Content="Добави" HorizontalAlignment="Left" VerticalAlignment="Center" >
+                        <Button.Flyout>
+                            <Flyout>
+                                <StackPanel Orientation="Horizontal" MaxWidth="600" HorizontalAlignment='Center'>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock VerticalAlignment="Center" Margin="0 0 10 0" FontSize="16">Име на продукта</TextBlock>
+                                        <AutoSuggestBox VerticalAlignment="Center" Height="32" Width="200" TextChanged="AutoSuggestBoxProducts_TextChanged" SuggestionChosen="AutoSuggestBoxProducts_SuggestionChosen" Name="AutoSuggestBoxProducts"/>
+                                    </StackPanel>
+                                    <Button Name="btnConfirmAddingProduct" Height="31" FontSize="16" FontFamily="Segoe MDL2 Assets" Content="&#xE710;" FontWeight="Medium" VerticalAlignment="Center" Click="BtnConfirmAddingProduct_Click" />
+                                </StackPanel>
+                            </Flyout>
+                        </Button.Flyout>
+                    </Button>
+                    <Button Name="btnProductDelete" Margin="20 0" IsEnabled="False" Content="Изтрий" HorizontalAlignment="Left" VerticalAlignment="Center" Click="BtnProductDelete_Click"/>
+                    <Button Name="btnProductClear" Content="Изчисти" HorizontalAlignment="Left" VerticalAlignment="Center" Click="BtnProductClear_Click"/>
+                </StackPanel>  
             </StackPanel>
-            <StackPanel Orientation="Horizontal" Margin="0 10 0 10">
-                <TextBlock Text="Описание" VerticalAlignment="Center" FontSize="20" Width="200" />
-                <TextBox Name="RecipeDescription" FontSize="20" Width="400" />
-            </StackPanel>
-            <StackPanel Orientation="Horizontal" Margin="0 10 0 10">
-                <TextBlock Text="Категория" VerticalAlignment="Center" FontSize="20" Width="200" />
-                <TextBox Name="RecipeCategory" FontSize="20" Width="400" />
-            </StackPanel>
-            <StackPanel Orientation="Horizontal" Margin="0 10 0 10">
-                <TextBlock Text="Продукти" VerticalAlignment="Center" FontSize="20" Width="200" />
-                <TextBox Name="RecipeProducts" FontSize="20" Width="400" />
-            </StackPanel>
-            <StackPanel Orientation="Horizontal" Margin="0 10 0 10">
-                <TextBlock Text="Изображение" VerticalAlignment="Center" FontSize="20" Width="200" />
-                <Button Name="btnImgLoad" Content="Избери" HorizontalAlignment="Left" VerticalAlignment="Center" Click="BtnImgLoad_ClickAsync"  />
-                <TextBlock Name="ImgName" Margin="20 0 0 0" Width="300" VerticalAlignment="Center" FontSize="20" />
-            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 10 0 10">
+            <TextBlock Text="Изображение" VerticalAlignment="Center" FontSize="20" Width="200" />
+            <Button Name="btnImgLoad" Content="Избери" HorizontalAlignment="Left" VerticalAlignment="Center" Click="BtnImgLoad_ClickAsync"  />
+            <TextBlock Name="ImgName" Margin="20 0 0 0" Width="300" VerticalAlignment="Center" FontSize="20" />
+        </StackPanel>
 
-            <!-- Buttons -->
-            <StackPanel Orientation="Vertical" Margin="0 10">
-                <Button Name="btnAdd" Content="Добави" FontSize="14" Width="500" Height="32.8" HorizontalAlignment="Center" Padding="0" Margin="0 0 20 0" Click="BtnAdd_Click" />
-                <!--<Button Name="btnUpdate" Content="Обнови" FontSize="20" Width="150" Padding="20" Margin="0 0 20 0" />
+        <!-- Buttons -->
+        <StackPanel Orientation="Vertical" Margin="0 10">
+            <Button Name="btnAdd" Content="Добави" FontSize="14" Width="500" Height="32.8" HorizontalAlignment="Center" Padding="0" Margin="0 0 20 0" Click="BtnAdd_Click" />
+            <!--<Button Name="btnUpdate" Content="Обнови" FontSize="20" Width="150" Padding="20" Margin="0 0 20 0" />
                 <Button Name="btnSave" Content="Запази" FontSize="20" Width="150" Padding="20" Margin="0 0 20 0" />
                 <Button Name="btnDelete" Content="Изтрий" FontSize="20" Width="150" Padding="20" Margin="0 0 20 0" />-->
-            </StackPanel>
+        </StackPanel>
 
-            <!-- Grid -->
-            <!--<ListView Name="RecipeGrid" Height="400">
+        <!-- Grid -->
+        <!--<ListView Name="RecipeGrid" Height="400">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
@@ -55,24 +72,6 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>-->
-        </StackPanel>
-
-        <StackPanel Name="AdditionalCreatePanel" Visibility="Visible" Padding="40">
-            <!-- Title -->
-            <TextBlock Text="Попълни продуктите" FontSize="50" FontWeight="Bold" Margin="0 0 0 30" />
-            <!-- Product -->
-            <ListView Name="ProductsGrid">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="{Binding NewProducts}" Name="ProductName" FontSize="20" Padding="10" Width="300"/>
-                            <ComboBox Name="ProductType" FontSize="20"/>
-                            <TextBox Name="ProductPrice" FontSize="20"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            <Button Name="btnFinish" Width="450" Content="Завърши" HorizontalAlignment="Stretch" Margin="0,10,0,0" VerticalAlignment="Stretch"/>
-        </StackPanel>
     </StackPanel>
+
 </Page>

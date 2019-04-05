@@ -7,14 +7,32 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    
-    <StackPanel Orientation="Horizontal" Background="Cyan">
-        <Button Foreground="Black" Background="White" HorizontalAlignment="Center" Width="100" Height="100" Margin="200,-700,0,0" RenderTransformOrigin="0.5,0.5" Click="Button_Click">
-            <Button.RenderTransform>
-                <CompositeTransform ScaleX="-1"/>
-            </Button.RenderTransform>
 
-        </Button>
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal" Margin="20 20 0 40" VerticalAlignment="Top">
+            <TextBox Name="RecipeNameInput" Height="60" Width="800" FontSize="42"/>
+            <Button Name="btnSearchForRecipes" Height="60" Width="60" FontSize="34" Background="#490012" FontFamily="Segoe MDL2 Assets" Content="&#xE11A;" FontWeight="Medium" VerticalAlignment="Center" Click="BtnSearchForRecipes_Click" />
+        </StackPanel>
+        <TextBlock Name="NoResultsText" Text="Няма намерени резултати" Margin="20 10" FontSize="30" FontWeight="Medium" Opacity="0.5" Visibility="Collapsed"/>
+        <ScrollViewer Name="scrollViewRecipes" Margin="0 0 0 20" VerticalScrollMode="Enabled" VerticalScrollBarVisibility="Visible" Height="Auto" MaxHeight="500">
+            <ListView Name="recipesList" ItemsSource="{x:Bind recipes}" SelectionChanged="RecipesList_SelectionChanged">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="local:RecipeDisp">
+                        <StackPanel Orientation="Horizontal" Height="160" Width="1000">
+                            <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                                <TextBlock Text="{x:Bind Name}" VerticalAlignment="Center" Name="ProductName" FontSize="42" FontWeight="Bold" Margin="20 0 0 3" Width="300"/>
+                                <TextBlock Text="{x:Bind CategoryName}" VerticalAlignment="Center" Name="ProductQuantity" Margin="0" Opacity="0.8" FontSize="32" Width="240"/>
+                            </StackPanel>
+                            <Image Name="RecipeImage" Source="{x:Bind ImgAddress}" Margin="5"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollViewer>
+    </StackPanel>
+    
+
+    <!--<StackPanel Orientation="Horizontal">
         <TextBox  Foreground="Black" Background="White" Height="100" Margin="0,100,-1000,1000"  HorizontalContentAlignment="Left" VerticalContentAlignment="Bottom" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
 
         </TextBox>
@@ -40,5 +58,5 @@
 
         </ListView>
 
-    </StackPanel>
+    </StackPanel>-->
 </Page>

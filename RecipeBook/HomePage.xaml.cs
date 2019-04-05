@@ -23,10 +23,9 @@ namespace RecipeBook
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     /// 
-
-    public partial class RecipeDisp
+    public partial class RecipeDispHome
     {
-        public RecipeDisp(string name, string description, string categoryName, string imgAddress)
+        public RecipeDispHome(string name, string description, string categoryName, string imgAddress)
         {
             this.Name = name;
             this.Description = description;
@@ -38,45 +37,45 @@ namespace RecipeBook
         public string Description { get; set; }
         public string CategoryName { get; set; }
         public string ImgAddress { get; set; }
-        
+
     }
 
-    public sealed partial class SearchRecipe : Page
+    public sealed partial class HomePage : Page
     {
         recipebookContext context = new recipebookContext();
-        ObservableCollection<RecipeDisp> recipes = new ObservableCollection<RecipeDisp>();
+        ObservableCollection<RecipeDispHome> recipes = new ObservableCollection<RecipeDispHome>();
 
-        public SearchRecipe()
+        public HomePage()
         {
             this.InitializeComponent();
+            LoadRecipes();
         }
 
-        private void BtnSearchForRecipes_Click(object sender, RoutedEventArgs e)
+        private void LoadRecipes()
         {
-            recipes.Clear();
-            var recipesToShow = context.Recipes.Where(x => x.Name.Contains(RecipeNameInput.Text)).ToList();
-            foreach (var recipe in recipesToShow)
+            Random random = new Random();
+
+            int[] randomRecipesId = new int[5];
+            for (int i = 0; i < 5; i++)
             {
-                var categoryName = context.Categories.Where(x => x.Id == recipe.CategoryId).Select(x => x.Name).ToList().First().ToString();
+                randomRecipesId[i] = random.Next(10, 50);
+            }
+
+            foreach (var id in randomRecipesId)
+            {
+                var recipeToShow = context.Recipes.Where(x => x.Id == id).First();
+                var categoryName = context.Categories.Where(x => x.Id == recipeToShow.CategoryId).Select(x => x.Name).ToList().First().ToString();
                 string ImgAddress;
-                if(recipe.ImgName != "")
-                {                    
-                    ImgAddress = "/Assets/RecipeImages/" + recipe.ImgName;
+                if (recipeToShow.ImgName != "")
+                {
+                    ImgAddress = "/Assets/RecipeImages/" + recipeToShow.ImgName;
                 }
                 else
                 {
                     ImgAddress = "/Assets/RecipeImages/NoImagePreview.png";
                 }
-                RecipeDisp recipeDisp = new RecipeDisp(recipe.Name, recipe.Description, categoryName, ImgAddress);
+                RecipeDispHome recipeDisp = new RecipeDispHome(recipeToShow.Name, recipeToShow.Description, categoryName, ImgAddress);
                 recipes.Add(recipeDisp);
-            }
-            if(recipes.Count == 0)
-            {
-                NoResultsText.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                NoResultsText.Visibility = Visibility.Collapsed;
             }
         }
 

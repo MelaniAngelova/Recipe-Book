@@ -26,34 +26,34 @@ namespace RecipeBook
         public MainPage()
         {
             this.InitializeComponent();
+            PageName.Text = "Начална страница";
+            MainFrame.Navigate(typeof(HomePage));
         }
 
-
-        private void AddRecipe_Tapped(object sender, TappedRoutedEventArgs e)
+        private void Menu_button_Click(object sender, RoutedEventArgs e)
         {
-            // Добавяне на рецепта
-            Екран.Navigate(typeof(AddRecipe));
-
+            MenuSplitView.IsPaneOpen = !MenuSplitView.IsPaneOpen;
         }
 
-        private void SearchRecipe_Tapped(object sender, TappedRoutedEventArgs e)
+        private void PagesListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            // Търсене на рецепта
-           // Екран.Navigate(typeof(AddRecipe));
+            if (HomePageItem.IsSelected)
+            {
+                MainFrame.Navigate(typeof(HomePage));
+                PageName.Text = "Начална страница";
+            }
 
-        }
+            else if (LookupPageItem.IsSelected)
+            {
+                MainFrame.Navigate(typeof(SearchRecipe));
+                PageName.Text = "Потърси рецепта";
+            }
 
-        private void FavoriteRecipe_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            // Любими рецепти
-            //Екран.Navigate(typeof(AddRecipe));
-
-        }
-
-        // Mega Fix
-        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
-        {
-            MenuContainer.IsPaneOpen = !MenuContainer.IsPaneOpen;
+            else if (CreatePageItem.IsSelected)
+            {
+                MainFrame.Navigate(typeof(AddRecipe));
+                PageName.Text = "Добави рецепта";
+            }
         }
     }
 }

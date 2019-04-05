@@ -17,6 +17,7 @@ using Windows.Storage;
 
 using RecipeBook.Models;
 using RecipeBook.Controller;
+using System.Collections.ObjectModel;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -29,27 +30,44 @@ namespace RecipeBook
     {
         recipebookContext context = new recipebookContext();
 
+        ObservableCollection<string> categories = new ObservableCollection<string>();
+        ObservableCollection<string> newProducts = new ObservableCollection<string>();
+
+        string ImgPath;
+        
         public AddRecipe()
         {
             this.InitializeComponent();
+            GetCategories();            
         }
 
-        private void UpdateGrid()
+        private void GetCategories()
         {
-            ProductsGrid.ItemsSource = NewProducts;
-            //ProductsGrid.ItemsSource = context.Products.All(x => !newProducts.Contains(x.Name));
+            List<string> categoriesNames = context.Categories.Select(x => x.Name).ToList();
+            foreach(var name in categoriesNames)
+            {
+                categories.Add(name);
+            }
         }
-
+        
         private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
-
-            AdditionalCreatePanel.Visibility = Visibility.Visible;
             CreatePage createPage = new CreatePage();
-            NewProducts = createPage.ManageInput(RecipeName.Text, RecipeDescription.Text, RecipeCategory.Text, RecipeProducts.Text, ImgName.Text);
-            UpdateGrid();
-        }
+            createPage.ManageInput(newProducts, RecipeName.Text, RecipeDescription.Text, RecipeCategory.SelectedValue.ToString(), ImgName.Text, ImgPath);
+            var recipeid = createPage.GetLastRecipeId();
+            newProducts.Insert(0, recipeid.ToString());
+            Frame.Navigate(typeof(ConfirmRecipe), newProducts);
+            
+            
+        }    
 
-        public List<string> NewProducts { get; private set; } = new List<string>();
+        private void BtnConfirmAddingProduct_Click(object sender, RoutedEventArgs e)
+        {
+            newProducts.Add(AutoSuggestBoxProducts.Text);
+            AutoSuggestBoxProducts.Text = "";
+            scrollViewProducts.Visibility = Visibility.Visible;
+            btnProductAdd.Flyout.Hide();
+        }
 
         private async void BtnImgLoad_ClickAsync(object sender, RoutedEventArgs e)
         {
@@ -63,7 +81,50 @@ namespace RecipeBook
             if (pickedFile != null)
             {
                 ImgName.Text = pickedFile.Name;
+                ImgPath = pickedFile.Path;
             }
         }
+
+        private void AutoSuggestBoxProducts_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
+        {
+            if (args.Reason == AutoSuggestionBoxTextChangeReason.UserInput)
+            {
+                ObservableCollection<string> products = new ObservableCollection<string>();
+                var productsToHint = context.Products.Where(x => x.Name.Contains(AutoSuggestBoxProducts.Text)).ToList();
+                foreach(var prod in productsToHint)
+                {
+                    products.Add(prod.Name);
+                }
+
+                sender.ItemsSource = products;
+            }
+        }
+
+        private void AutoSuggestBoxProducts_SuggestionChosen(AutoSuggestBox sender, AutoSuggestBoxSuggestionChosenEventArgs args)
+        {
+            sender.Text = args.SelectedItem.ToString();
+        }
+        
+        private void BtnProductDelete_Click(object sender, RoutedEventArgs e)
+        {
+            newProducts.Remove(ProductsListView.SelectedItem.ToString());
+            btnProductDelete.IsEnabled = false;
+            if(newProducts.Count == 0)
+            {
+                scrollViewProducts.Visibility = Visibility.Collapsed;
+            }
+        }
+
+        private void BtnProductClear_Click(object sender, RoutedEventArgs e)
+        {
+            newProducts.Clear();
+            scrollViewProducts.Visibility = Visibility.Collapsed;
+        }
+
+        private void ProductsListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            btnProductDelete.IsEnabled = true;
+        }
+
     }
 }

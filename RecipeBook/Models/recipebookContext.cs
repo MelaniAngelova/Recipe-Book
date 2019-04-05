@@ -25,8 +25,9 @@ namespace RecipeBook.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
+                //To change when pushing
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseMySQL("server=localhost;port=3306;user=root;password=root;database=recipebook");
+                optionsBuilder.UseMySQL("server=localhost;port=3306;user=root;password=CLusters10107#;database=recipebook");
             }
         }
 

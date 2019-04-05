@@ -6,39 +6,40 @@ using System.Threading.Tasks;
 
 using RecipeBook.Models;
 using RecipeBook.Controller;
+using System.Collections.ObjectModel;
+using System.Security.AccessControl;
 
 namespace RecipeBook.Controller
 {
-    class CreatePage
+    public class CreatePage
     {
         recipebookContext context = new recipebookContext();
-
         public CreatePage()
         {
 
         }
 
-        public List<string> ManageInput(params string[] args)
+        private int recipeId;
+
+        public void ManageInput(ObservableCollection<string> newProducts, params string[] args)
         {
             Recipe recipe = new Recipe();
             recipe.Name = args[0];
             recipe.Description = args[1];
-            //var category = context.Categories.Where(x => x.Name == args[2]).First();
-            //recipe.CategoryId = category.Id;
-            if (args.Count() >= 5) { recipe.ImgName = args[4]; }
-            var products = args[3].Split(new char[2] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries).ToList();
+            recipe.CategoryId = context.Categories.Where(x => x.Name == args[2]).Select(x => x.Id).ToList().First();
+            if (args.Count() >= 4) { recipe.ImgName = args[3]; }
 
-            var newProducts = new List<string>();
-            foreach (var productName in products)
-            {
-                if(context.Products.Any(p => p.Name == productName) == false)
-                {
-                  newProducts.Add(productName);
-                }
-                newProducts.Add(productName);
-            }
+            context.Recipes.Add(recipe);
+            context.SaveChanges();
 
-            return newProducts;
+            recipeId = context.Recipes.Where(x => x.Name == args[0]).Select(x => x.Id).ToList().First();
+            Uri dest = new Uri("ms-appx:///Assets/RecipeImages/" + args[3]);
+            //System.IO.File.Copy(args[4], args[4]);
+        }
+
+        public int GetLastRecipeId()
+        {
+            return recipeId;
         }
     }
 }
