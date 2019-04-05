@@ -20,9 +20,9 @@ namespace RecipeBook
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class homePage : Page
+    public sealed partial class HomePage : Page
     {
-        public homePage()
+        public HomePage()
         {
             this.InitializeComponent();
         }
