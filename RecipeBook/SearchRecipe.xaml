@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     
-    <StackPanel Orientation="Horizontal" Background="Cyan">
+    <StackPanel Orientation="Horizontal" Background="DarkRed">
         <Button Foreground="Black" Background="White" HorizontalAlignment="Center" Width="100" Height="100" Margin="200,-700,0,0" RenderTransformOrigin="0.5,0.5" Click="Button_Click">
             <Button.RenderTransform>
                 <CompositeTransform ScaleX="-1"/>
