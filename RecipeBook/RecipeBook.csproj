@@ -191,12 +191,12 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools">
-      <Version>2.2.3</Version>
+      <Version>3.0.0-preview3.19153.1</Version>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>6.2.7</Version>
+      <Version>6.2.8</Version>
     </PackageReference>
     <PackageReference Include="MySql.Data.EntityFrameworkCore">
       <Version>8.0.15</Version>
