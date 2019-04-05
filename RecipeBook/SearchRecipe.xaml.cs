@@ -82,7 +82,10 @@ namespace RecipeBook
 
         private void RecipesList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            RecipeDisp recipeChosen = (RecipeDisp)recipesList.SelectedItem;
+            string recipeName = recipeChosen.Name;
+            Recipe recipe = context.Recipes.Where(x => x.Name == recipeName).First();
+            Frame.Navigate(typeof(RecipeInfo), recipe);
         }
     }
 }

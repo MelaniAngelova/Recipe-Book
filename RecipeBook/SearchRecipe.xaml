@@ -10,7 +10,7 @@
 
     <StackPanel Orientation="Vertical">
         <StackPanel Orientation="Horizontal" Margin="20 20 0 40" VerticalAlignment="Top">
-            <TextBox Name="RecipeNameInput" Height="60" Width="800" FontSize="42"/>
+            <TextBox Name="RecipeNameInput" Height="60" Width="800" FontSize="36"/>
             <Button Name="btnSearchForRecipes" Height="60" Width="60" FontSize="34" Background="#490012" FontFamily="Segoe MDL2 Assets" Content="&#xE11A;" FontWeight="Medium" VerticalAlignment="Center" Click="BtnSearchForRecipes_Click" />
         </StackPanel>
         <TextBlock Name="NoResultsText" Text="Няма намерени резултати" Margin="20 10" FontSize="30" FontWeight="Medium" Opacity="0.5" Visibility="Collapsed"/>
@@ -19,9 +19,9 @@
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="local:RecipeDisp">
                         <StackPanel Orientation="Horizontal" Height="160" Width="1000">
-                            <StackPanel Orientation="Vertical" VerticalAlignment="Center">
-                                <TextBlock Text="{x:Bind Name}" VerticalAlignment="Center" Name="ProductName" FontSize="42" FontWeight="Bold" Margin="20 0 0 3" Width="300"/>
-                                <TextBlock Text="{x:Bind CategoryName}" VerticalAlignment="Center" Name="ProductQuantity" Margin="0" Opacity="0.8" FontSize="32" Width="240"/>
+                            <StackPanel Orientation="Vertical" Width="500" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                <TextBlock Text="{x:Bind Name}" VerticalAlignment="Center" HorizontalAlignment="Left" Name="ProductName" FontSize="42" FontWeight="Bold" Margin="20 0 0 3" Width="300"/>
+                                <TextBlock Text="{x:Bind CategoryName}" VerticalAlignment="Center" HorizontalAlignment="Left" Name="ProductQuantity" Margin="30 0" Opacity="0.8" FontSize="32" Width="240"/>
                             </StackPanel>
                             <Image Name="RecipeImage" Source="{x:Bind ImgAddress}" Margin="5"/>
                         </StackPanel>

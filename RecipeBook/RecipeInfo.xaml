@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="RecipeBook.RecipeInfo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RecipeBook"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel Padding="20" Orientation="Vertical">
+        <TextBlock Name="RecipeName" FontSize="50" FontWeight="Bold" Margin="0 0 0 30" />
+        <ScrollViewer Name="scrollViewRecipes" Margin="0 0 0 20" VerticalScrollMode="Enabled" VerticalScrollBarVisibility="Visible" Height="Auto" MaxHeight="600">
+            <TextBlock Name="RecipeDescription" Width="850" Height="Auto" TextWrapping="Wrap" FontSize="40" Margin="0 0 0 30" />
+        </ScrollViewer>
+    </StackPanel>
+</Page>
