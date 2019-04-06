@@ -18,9 +18,9 @@
             <ListView Name="recipesList" ItemsSource="{x:Bind recipes}" SelectionChanged="RecipesList_SelectionChanged">
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="local:RecipeDisp">
-                        <StackPanel Orientation="Horizontal" Height="160" Width="1000">
-                            <StackPanel Orientation="Vertical" Width="500" HorizontalAlignment="Left" VerticalAlignment="Center">
-                                <TextBlock Text="{x:Bind Name}" VerticalAlignment="Center" HorizontalAlignment="Left" Name="ProductName" FontSize="42" FontWeight="Bold" Margin="20 0 0 3" Width="300"/>
+                        <StackPanel Orientation="Horizontal" Height="160" Width="1200">
+                            <StackPanel Orientation="Vertical" Width="700" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                <TextBlock Text="{x:Bind Name}" VerticalAlignment="Center" HorizontalAlignment="Left" Name="ProductName" FontSize="42" FontWeight="Bold" Margin="20 0 0 3" Width="500"/>
                                 <TextBlock Text="{x:Bind CategoryName}" VerticalAlignment="Center" HorizontalAlignment="Left" Name="ProductQuantity" Margin="30 0" Opacity="0.8" FontSize="32" Width="240"/>
                             </StackPanel>
                             <Image Name="RecipeImage" Source="{x:Bind ImgAddress}" Margin="5"/>
